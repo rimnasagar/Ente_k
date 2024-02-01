@@ -809,7 +809,7 @@ align-items: center;
       border-radius: 33.5px;
       margin-top: -90px;
       position: relative;
-      margin-left: 35px;
+      /* margin-left: 35px; */
       z-index: 999;
     }
     
@@ -844,7 +844,7 @@ align-items: center;
       font-size: 15px;
       letter-spacing: 0;
       line-height: 34px;
-      margin-left: 2rem;
+      /* margin-left: 2rem; */
       margin-top: 2rem;
     }
     
