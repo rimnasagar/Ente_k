@@ -1732,7 +1732,7 @@ letter-spacing: 1.133px;
         display: flex;
         /* width: 40%; */
         column-gap: 1rem;
-        width: 100%;
+        /* width: 100%; */
         flex: 1;
         box-sizing: border-box;
         justify-content: end;
@@ -1740,13 +1740,13 @@ letter-spacing: 1.133px;
         /* display: inline-block; */
     }
     .footer__content__newsletter__form img {
-        position: absolute;
+        /* position: absolute;
         top: 50%;
         left: 865px;
         transform: translateY(-50%);
         font-size: 18px;
-        color: #555;
-        width: 16px;
+        color: #555;*/
+        width: 16px; 
     }
     .footer__content__newsletter__form input{
         /* height: 2.2rem;
@@ -1756,7 +1756,7 @@ letter-spacing: 1.133px;
         background: transparent;
         padding: 0 0 0 2rem;
         color: #fff; */
-        width: 436.29px;
+        /* width: 436.29px; */
         background: transparent;
 padding: 16.967px 53.086px;
 justify-content: center;
@@ -1779,7 +1779,7 @@ border: 1.212px solid rgba(255, 255, 255, 0.24);
         width: 6rem;
         border-radius: 20px;
         border: none; */
- width:153px;      
+ /* width:153px;       */
 padding: 16.967px 33.934px;
 
 border-radius: 121.192px;
