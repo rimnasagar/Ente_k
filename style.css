@@ -109,11 +109,12 @@ align-items: center;
     margin-top: 150px; 
 }
 .page__overlap__body .page__overlap__body__content__img{
-    width: 80%;
+    /* width: 80%;
     height: auto;
     position: absolute;
     top:312px;
     left:243px;
+    justify-content: center; */
     /* display:flex;
     justify-content: center;
     align-items: center;
@@ -788,8 +789,10 @@ align-items: center;
       margin-bottom: 20px;
     }
     .div-testimonial-one-2 {
-      width: 400px;
-      height: 230px;
+      /* width: 400px; */
+      /* height: 230px; */
+      width:auto;
+      height:auto;
       
       background-color: #ffffff;
       box-shadow: 0px 0px 60px #00000012;

@@ -13,10 +13,10 @@
     />
 
     <!-- Latest compiled and minified CSS -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
+    /> -->
 
     <title>Entek</title>
     <style>
@@ -56,6 +56,8 @@
       }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="/Entek_Git/output.css" />
 
     <link
@@ -80,6 +82,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </head>
   <body class="overflow-x-hidden">
+    <div class="nav-menu flex justify-center items-center fixed -top-[100vh] left-0 h-screen w-full z-[999999] 
+    bg-[#2a4c95] transition ease-in-out">
+    <div class="nav-items w-[50%] h-[80%] text-white font-montserrat text-4xl text-center">
+<ul class="h-full flex flex-col justify-evenly items-center">
+  <a class="w-fit" href=""><li>HOME</li></a>
+  <a class="w-fit" href=""><li>ABOUT</li></a>
+    <a class="w-fit" href=""><li>PRODUCTS</li></a>
+      <a class="w-fit" href=""><li>SOLUTIONS</li></a>
+        <a class="w-fit" href=""><li>SUPPORT</li></a>
+          <a class="w-fit" href=""><li>CAREER</li></a>
+
+
+
+
+</ul>
+
+    </div>
+<i class="fas fa-times text-white text-2xl absolute top-5 right-5" onclick="closeMenu()"></i>
+
+    </div>
     <div class="page">
       <section class="determined to dream ">
         <div class=" w-full h-full bg-[#E7E7E7] relative ">
@@ -91,7 +113,21 @@
               alt=""
               class="opacity-25 w-full h-full "
             />
+            <div
+          class="footer__content__about__social__icons absolute bottom-0 right-0 p-6"
+        >
+          <span>
+            <img class="element" src="img/facebookk.svg" />
+          </span>
+          <span>
+            <img class="element" src="img/linkdin.svg" />
+          </span>
+          <span>
+            <img class="element" src="img/insta.svg" />
+          </span>
+        </div>
           </div>
+          
           <div class="page__overlap__header absolute sm:top-0 top-[-14px] sm:left-0 left-[30px]">
             <div class="page__overlap__header__logo">
               <img
@@ -147,7 +183,7 @@
                        </div> -->
             <div class="page__req__main__content text-center absolute -bottom-14 md:-bottom-2">
               <h5
-                class="text-4xl lg:text-8xl xl:text-[9rem] text-white  sm:-mb-32  mb-[-10rem] font-extrabold italic slide-up"
+                class="text-xl md:text-5xl xl:text-[5rem] text-white  sm:-mb-32  -mb-[5rem] font-extrabold italic slide-up"
               >
                 DETERMINED TO DREAM<br />DRIVEN TO DELIVER
               </h5>
@@ -158,9 +194,9 @@
               /> -->
               <div class="slide-left ">
                 <div
-                  class="page__overlap__body__content__img  w-full mt-20 sm:mt-0"
+                  class="page__overlap__body__content__img   mt-20 sm:mt-0 "
                 >
-                  <img src="img/image-4.png" alt="Helicopter Image" />
+                  <img src="img/image-4.png" alt="Helicopter Image" class="mx-auto" />
 
                   <div
                     class="ellipse-shadow absolute z-40 bottom-[-50px] lg:bottom-[-348px] xl:-bottom-28"
@@ -168,7 +204,7 @@
                 </div>
               </div>
             </div>
-            <div
+            <!-- <div
               class="footer__content__about__social__icons absolute bottom-0 right-0 p-6"
             >
               <span>
@@ -180,7 +216,7 @@
               <span>
                 <img class="element" src="img/insta.svg" />
               </span>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -192,33 +228,32 @@
             class="flex flex-col justify-center md:w-[40%] left-section mt-5 md:mt-0 p-5 sm:p-0"
           >
             <h2
-              class="text-2xl font-bold mb-5 text-[#2a4c95] italic font-montserrat slide-right"
+              class="text-sm font-bold mb-5 text-[#2a4c95] italic font-montserrat slide-right"
             >
               GET TO KNOW US
             </h2>
             <h5
-              class=" text-4xl md:text-7xl font-bold mb-5 text-[#2a4c95] font-montserrat line-height-[1.2] slide-left"
+              class=" text-4xl  font-bold mb-5 text-[#2a4c95] font-montserrat line-height-[1.2] slide-left"
             >
               Our jetly save your time and give you comfort in flights
             </h5>
             <p
-              class="font-montserrat text-[#2a4c95] line-height-[1.2] mb-2 slide-right"
+              class="text-sm font-montserrat text-[#2a4c95] leading-6 mb-2 slide-right"
             >
               Non augue egestas, commodo velit eget, vestibulum tellus.
-              Curabitur<br />vulputate justo elit, at elementum orci pulvinar
-              vel. Pellentesque habitant morbi<br />
-              tristique. Pellentesque habitant morbi tristique. Ut non augue
-              egestas,<br />commodo velit eget, vestibulum tellus.
+              Curabitur vulputate justo elit, at elementum orci pulvinar
+              vel. Pellentesque habitant morbi tristique. Pellentesque habitant morbi tristique. Ut non augue
+              egestas,commodo velit eget, vestibulum tellus.
             </p>
             <div class="flex items-center mt-5 slide-left">
               <img class="mr-2" src="img/check.svg" />
-              <p class="text-[#2a4c95] font-bold mt-2 mb-2">
+              <p class="text-[#2a4c95] text-sm font-bold mt-2 mb-2">
                 There are many variations of passage of lorem.
               </p>
             </div>
             <div class="flex items-center slide-right">
               <img class="mr-2" src="img/check.svg" />
-              <p class="text-[#2a4c95] font-bold mt-2 mb-2">
+              <p class="text-[#2a4c95] text-sm font-bold mt-2 mb-2">
                 There are many variations of passage of lorem.
               </p>
             </div>
@@ -263,8 +298,8 @@
                   style="padding: 10px; overflow: hidden"
                   class="bg-red-600 text-white w-52 md:w-96 md:h-24 lg:block sm:hidden md:block "
                 >
-                  <p class="text-3xl font-bold font-montserrat">8000+</p>
-                  <p class="font-montserrat text-lg font-bold">
+                  <p class="text-2xl font-bold font-montserrat">8000+</p>
+                  <p class="font-montserrat text-lg font-light">
                     Satisfied Clients
                   </p>
                 </div>
@@ -288,21 +323,21 @@
         <div class="slider relative group p-10 flex justify-between gap-8">
           <!-- Card 1 -->
           <div class="w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
-            <!-- Image with Linear Gradient Overlay -->
+           
             <div class="relative w-full h-full">
               <div
-                class="w-full h-full ml-4 p-5 bg-red-700 text-white flex flex-col my-auto justify-evenly"
+                class="w-full h-full p-3 sm:p-5 bg-red-700 text-white flex flex-col my-auto justify-evenly"
               >
                 <h4
-                  class="sm:text-3xl font-bold italic mt-10 slide-in-from-bottom italic"
+                  class="text-sm sm:text-xl  font-bold italic  slide-in-from-bottom italic"
                 >
                   OUR INDUSTRIES
                 </h4>
-                <h5 class="sm:text-6xl font-bold mb-5 mt-2">
+                <h5 class= "text-sm sm:text-xl  font-bold  mb-2 sm:mb-5 ">
                   Get Discount next aerocraft products
                 </h5>
                 <p
-                  class="mb-5 fade-in sm:text-2xl font-light sm:leading-[27px]"
+                  class=" mb-2 sm:mb-5 fade-in text-sm  font-light font-thin sm:leading-[27px]"
                 >
                   Non augue egestas, commodo velit eget, vestibulum tellus.
                   Curabiturvulputate justo elit, at elementum orci pulvinar vel.
@@ -311,181 +346,153 @@
                   vestibulum tellus.
                 </p>
                 <button
-                  class="bg-white text-red-700 rounded-full w-fit font-bold px-20 py-8"
+                  class="bg-white text-red-700 rounded-full w-fit font-bold sm:px-20 sm:py-8 px-5 py-2 "
                 >
                   View All
                 </button>
               </div>
 
-              <!-- Linear Gradient Overlay -->
-              <!-- <div class="overlay absolute inset-0 bg-gradient-to-b from-transparent to-red-700 opacity-80 group-hover:hidden"></div> -->
+              
             </div>
 
-            <!-- Mouseover Text -->
-            <div
-              class="text-container absolute inset-0 flex justify-start items-end left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-            ></div>
+          
+            
           </div>
+
 
           <!-- Card 2 -->
 
-          <div class="w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
-            <!-- Image with Linear Gradient Overlay -->
-            <div class="relative w-full h-full">
-              <img class="w-full h-full" src="img/c-2.png" alt="Image 2" />
+          <div class=" group relative w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
 
-              <!-- Linear Gradient Overlay -->
-              <div
-                class="overlay absolute inset-0 bg-gradient-to-b from-transparent to-blue-800 opacity-80 group-hover:hidden"
-              ></div>
-            </div>
+            <img class="w-full h-full" src="img/c-2.png" alt="Image 2" />
+            <div class="overlay absolute top-0 left-0 h-full w-full group-hover:bg-gradient-to-b from-transparent to-blue-800 opacity-80"></div>
 
-            <!-- Mouseover Text -->
-            <div
-              class="text-container absolute inset-0 flex justify-start items-end left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-            >
-              <p class="text-2xl font-montserrat font-bold">
-                Aerospace <br />Facility
-              </p>
-            </div>
+          <div class="card-content text-white absolute left-0 -bottom-full group-hover:bottom-0 w-full h-full p-10 teansition ease-in-out">
+            <p class="text-2xl font-montserrat font-bold">
+              Aerospace <br />Facility
+            </p>
+          </div>
+         
+
+
+
           </div>
 
-          <!-- Card 3 -->
-          <div class="w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
-            <!-- Image with Linear Gradient Overlay -->
-            <div class="relative w-full h-full">
+            <!-- Card 3 -->
+
+            <div class="group relative w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
+
               <img class="w-full h-full" src="img/c-3.png" alt="Image 2" />
-
-              <!-- Linear Gradient Overlay -->
-              <div
-                class="overlay absolute inset-0 bg-gradient-to-b from-transparent to-blue-800 opacity-80 group-hover:hidden"
-              ></div>
-            </div>
-
-            <!-- Mouseover Text -->
-            <div
-              class="text-container absolute inset-0 flex justify-start items-end left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-            >
+              <div class="overlay absolute top-0 left-0 h-full w-full group-hover:bg-gradient-to-b from-transparent to-blue-800 opacity-80"></div>
+  
+            <div class="card-content text-white absolute left-0 -bottom-full group-hover:bottom-0 w-full h-full p-10 teansition ease-in-out">
               <p class="text-2xl font-montserrat font-bold">
                 Aerospace <br />Facility
               </p>
             </div>
-          </div>
+           
+  
+  
+  
+            </div>
+
+
+          
+
+          
 
           <!-- Card 4 -->
-          <div class="w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
-            <!-- Image with Linear Gradient Overlay -->
-            <div class="relative w-full h-full">
+           
+
+            <div class="group relative w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
+
               <img class="w-full h-full" src="img/c-1.png" alt="Image 2" />
-
-              <!-- Linear Gradient Overlay -->
-              <div
-                class="overlay absolute inset-0 bg-gradient-to-b from-transparent to-blue-800 opacity-80 group-hover:hidden"
-              ></div>
-            </div>
-
-            <!-- Mouseover Text -->
-            <div
-              class="text-container absolute inset-0 flex justify-start items-end left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-            >
+              <div class="overlay absolute top-0 left-0 h-full w-full group-hover:bg-gradient-to-b from-transparent to-blue-800 opacity-80"></div>
+  
+            <div class="card-content text-white absolute left-0 -bottom-full group-hover:bottom-0 w-full h-full p-10 teansition ease-in-out">
               <p class="text-2xl font-montserrat font-bold">
                 Aerospace <br />Facility
               </p>
             </div>
-          </div>
+           
+  
+  
+  
+            </div>
 
           <!-- Card 5 -->
-          <div class="w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
-            <!-- Image with Linear Gradient Overlay -->
-            <div class="relative w-full h-full">
+           
+
+            <div class="group relative w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
+
               <img class="w-full h-full" src="img/c-1.png" alt="Image 2" />
-
-              <!-- Linear Gradient Overlay -->
-              <div
-                class="overlay absolute inset-0 bg-gradient-to-b from-transparent to-blue-800 opacity-80 group-hover:hidden"
-              ></div>
-            </div>
-
-            <!-- Mouseover Text -->
-            <div
-              class="text-container absolute inset-0 flex justify-start items-end left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-            >
+              <div class="overlay absolute top-0 left-0 h-full w-full group-hover:bg-gradient-to-b from-transparent to-blue-800 opacity-80"></div>
+  
+            <div class="card-content text-white absolute left-0 -bottom-full group-hover:bottom-0 w-full h-full p-10 teansition ease-in-out">
               <p class="text-2xl font-montserrat font-bold">
                 Aerospace <br />Facility
               </p>
             </div>
-          </div>
+           
+  
+  
+  
+            </div>
           <!-- Card 6 -->
-          <div class="w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
-            <!-- Image with Linear Gradient Overlay -->
-            <div class="relative w-full h-full">
-              <img class="w-full h-full" src="img/c-2.png" alt="Image 2" />
+       <!-- Card 2 -->
 
-              <!-- Linear Gradient Overlay -->
-              <div
-                class="overlay absolute inset-0 bg-gradient-to-b from-transparent to-blue-800 opacity-80 group-hover:hidden"
-              ></div>
-            </div>
+       <div class="group relative w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
 
-            <!-- Mouseover Text -->
-            <div
-              class="text-container absolute inset-0 flex justify-start items-end left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-            >
-              <p class="text-2xl font-montserrat font-bold">
-                Aerospace <br />Facility
-              </p>
-            </div>
-          </div>
+        <img class="w-full h-full" src="img/c-2.png" alt="Image 2" />
+        <div class="overlay absolute top-0 left-0 h-full w-full group-hover:bg-gradient-to-b from-transparent to-blue-800 opacity-80"></div>
+
+      <div class="card-content text-white absolute left-0 -bottom-full group-hover:bottom-0 w-full h-full p-10 teansition ease-in-out">
+        <p class="text-2xl font-montserrat font-bold">
+          Aerospace <br />Facility
+        </p>
+      </div>
+     
+
+
+
+      </div>
           <!-- Card 7 -->
-          <div class="w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
-            <!-- Image with Linear Gradient Overlay -->
-            <div class="relative w-full h-full">
-              <img class="w-full h-full" src="img/c-3.png" alt="Image 2" />
+           <!-- Card 2 -->
 
-              <!-- Linear Gradient Overlay -->
-              <div
-                class="overlay absolute inset-0 bg-gradient-to-b from-transparent to-blue-800 opacity-80 group-hover:hidden"
-              ></div>
-            </div>
+           <div class="group relative w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
 
-            <!-- Mouseover Text -->
-            <div
-              class="text-container absolute inset-0 flex justify-start items-end left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-            >
-              <p class="text-2xl font-montserrat font-bold">
-                Aerospace <br />Facility
-              </p>
-            </div>
+            <img class="w-full h-full" src="img/c-3.png" alt="Image 2" />
+            <div class="overlay absolute top-0 left-0 h-full w-full group-hover:bg-gradient-to-b from-transparent to-blue-800 opacity-80"></div>
+
+          <div class="card-content text-white absolute left-0 -bottom-full group-hover:bottom-0 w-full h-full p-10 teansition ease-in-out">
+            <p class="text-2xl font-montserrat font-bold">
+              Aerospace <br />Facility
+            </p>
+          </div>
+         
+
+
+
           </div>
           <!-- Card 8 -->
-          <div class="w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
-            <!-- Image with Linear Gradient Overlay -->
-            <div class="relative w-full h-full">
+            <!-- Card 2 -->
+
+            <div class="group relative w-[195px] h-[370px] sm:w-[395px] sm:h-[570px] mr-5">
+
               <img class="w-full h-full" src="img/c-1.png" alt="Image 2" />
-
-              <!-- Linear Gradient Overlay -->
-              <div
-                class="overlay absolute inset-0 bg-gradient-to-b from-transparent to-blue-800 opacity-80 group-hover:hidden"
-              ></div>
-            </div>
-
-            <!-- Mouseover Text -->
-            <div
-              class="text-container absolute inset-0 flex justify-start items-end left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-            >
+              <div class="overlay absolute top-0 left-0 h-full w-full group-hover:bg-gradient-to-b from-transparent to-blue-800 opacity-80"></div>
+  
+            <div class="card-content text-white absolute left-0 -bottom-full group-hover:bottom-0 w-full h-full p-10 teansition ease-in-out">
               <p class="text-2xl font-montserrat font-bold">
                 Aerospace <br />Facility
               </p>
             </div>
-          </div>
-          <!-- <div relative w-full h-full><img class="w-full h-full " src="img/c-1.png" alt="Image 3"></div>
-           <div relative w-full h-full><img class="w-full h-full] " src="img/c-1.png" alt="Image 1"></div>
-           <div relative w-full h-full><img class="w-full h-full " src="img/c-2.png" alt="Image 2"></div>
-           <div relative w-full h-full><img class="w-full h-full " src="img/c-1.png" alt="Image 3"></div>
-           <div relative w-full h-full><img class="w-full h-full " src="img/c-1.png" alt="Image 1"></div>
-           <div relative w-full h-full><img class="w-full h-full " src="img/c-2.png" alt="Image 2"></div>
-           <div relative w-full h-full><img class="w-full h-full " src="img/c-1.png" alt="Image 3"></div> -->
-          <!-- Add more slides as needed -->
+           
+  
+  
+  
+            </div>
+          
         </div>
       </section>
       <section class="page_get_to_know">
@@ -505,12 +512,12 @@
                 class="page__gettoknow__form pt-20 flex justify-center items-center sm:justify-start sm:items-start flex-col sm:pl-[22rem]"
               >
                 <h3
-                  class="text-3xl font-bold text-white font-montserrat italic slide-in-from-bottom"
+                  class="text-xl font-bold text-white font-montserrat italic slide-in-from-bottom"
                 >
                   GET YOUR PRODUCT
                 </h3>
                 <h1
-                  class="text-6xl font-bold text-white font-montserrat slide-in-from-leftt"
+                  class="text-3xl font-bold text-white font-montserrat slide-in-from-leftt"
                 >
                   Request for Defence <br />
                   Product
@@ -624,7 +631,7 @@
               </div>
             </div>
             <div class="testimonial-content">
-              <p class="there-are-many">
+              <p class="there-are-many ml-0 sm:ml-[2rem]">
                 There are many variations of passage<br />of available but the
                 majority have<br />suffered alteration in some form by<br />injected
                 humor or randomed.
@@ -644,7 +651,7 @@
       <section class="page__ourclients">
         <div class="parent__div__client bg-white w-full h-full mt-20 mb-10">
           <div class="page__client__content mt-5 slide-up">
-            <h2 class="text-[#2a4c95] text-center text-5xl font-bold">
+            <h2 class="text-[#2a4c95] text-center text-3xl font-extrabold">
               Our Clients
             </h2>
             <div
@@ -677,10 +684,10 @@
           <!-- Container -->
           <div class="container mx-auto relative z-10 slide-up">
             <!-- Heading Titles -->
-            <h3 class="text-3xl font-semibold text-[#2a4c95] mb-5 mt-[60px]">
+            <h3 class="text-sm font-semibold text-[#2a4c95] mb-5 mt-[60px]">
               OUR PRODUCTS
             </h3>
-            <h1 class="text-5xl font-bold text-[#2a4c95] mb-8">
+            <h1 class="text-3xl font-bold text-[#2a4c95] mb-8">
               Our Latest Products &amp;<br />Innovations
             </h1>
             <div class="slider-container">
@@ -719,8 +726,8 @@
                     />
                   </div>
 
-                  <p class="mb-2 font-bold">AEROSPACE</p>
-                  <p>
+                  <p class="mb-2 font-bold text-sm">AEROSPACE</p>
+                  <p class="font-thin text-sm">
                     Lorem Ipsum has been the industry's standard dummy text ever
                     since the 1500s.
                   </p>
@@ -761,8 +768,8 @@
                     />
                   </div>
 
-                  <p class="mb-2 font-bold">AEROSPACE</p>
-                  <p>
+                  <p class="mb-2 font-bold text-sm">AEROSPACE</p>
+                  <p class="font-thin text-sm">
                     Lorem Ipsum has been the industry's standard dummy text ever
                     since the 1500s.
                   </p>
@@ -792,8 +799,8 @@
                     />
                   </div>
 
-                  <p class="mb-2 font-bold">AEROSPACE</p>
-                  <p>
+                  <p class="mb-2 font-bold text-sm">AEROSPACE</p>
+                  <p class="font-thin text-sm">
                     Lorem Ipsum has been the industry's standard dummy text ever
                     since the 1500s.
                   </p>
@@ -823,8 +830,8 @@
                     />
                   </div>
 
-                  <p class="mb-2 font-bold">AEROSPACE</p>
-                  <p>
+                  <p class="mb-2 font-bold text-sm">AEROSPACE</p>
+                  <p class="font-thin text-sm">
                     Lorem Ipsum has been the industry's standard dummy text ever
                     since the 1500s.
                   </p>
@@ -854,8 +861,8 @@
                     />
                   </div>
 
-                  <p class="mb-2 font-bold">AEROSPACE</p>
-                  <p>
+                  <p class="mb-2 font-bold text-sm">AEROSPACE</p>
+                  <p class="text-sm font-thin">
                     Lorem Ipsum has been the industry's standard dummy text ever
                     since the 1500s.
                   </p>
@@ -905,19 +912,19 @@
             >
               <div class="page__req__main__content text-center w-fit">
                 <img src="img/link.svg" alt="" class="mx-auto" />
-                <h2 class="text-5xl text-white my-10 slide-up">
+                <h2 class="text-3xl text-white my-10 slide-up font-semibold">
                   Share requirements and our<br />experts will send you a quote
                 </h2>
                 <a href=""
                   ><button
-                    class="py-5 px-10 mr-3 bg-red-500 rounded-full text-white slide-right"
+                    class="py-5 px-10 mr-3 bg-red-500 rounded-full text-white slide-right text-sm"
                   >
                     BOOK NOW
                   </button></a
                 >
                 <a href=""
                   ><button
-                    class="py-5 px-10 bg-white text-black rounded-full slide-left"
+                    class="py-5 px-10 bg-white text-black rounded-full slide-left text-sm"
                   >
                     READ MORE
                   </button></a
@@ -928,13 +935,13 @@
         </div>
       </section>
       <section class="page__discover w-full h-auto mb-40 py-36">
-        <div class="flex flex-col sm:flex-row justify-between items-center">
+        <div class="flex flex-col sm:flex-row justify-between sm:items-center ml-10 sm:ml-0">
           <!-- Left Section -->
           <div class="w-[70%] sm:w-[50%] flex justify-center left-section slide-right">
             <div class="sm:mb-40 relative w-fit flex sm:justify-center justify-start mr-4 sm:mr-0">
-              <img class="w-[80%] sm:w-[60%] sm:w-auto" src="img/image-6.png" />
+              <img class="w-[80%] sm:w-[50%] sm:w-auto" src="img/image-6.png" />
               <img
-                class="absolute sm:top-64 sm:left-64 top-20 left-52 sm:w-[60%] w-[80%] sm:w-auto"
+                class="absolute sm:top-64 sm:left-64 top-20 left-52 sm:w-[50%] w-[80%] sm:w-auto"
                 src="img/image-5.png"
               />
             </div>
@@ -942,35 +949,35 @@
 
           <!-- Right Section -->
           <div
-            class="flex justify-center items-center mt-15 sm:ml-20 ml-0 sm:w-[50%] right-section slide-left"
+            class="flex sm:justify-center justify-start sm:items-center  mt-15 sm:ml-20 ml-0 sm:w-[50%] right-section slide-left"
           >
-            <div class="relative m-20 p-10 sm:w-[60%] animate-on-scroll">
-              <p class="text-4xl text-[#D73D35] font-bold mb-2">WHY ENTEC</p>
-              <p class="text-6xl font-bold text-green-900 mb-8">
-                Experience luxury<br />aerospace products
+            <div class="relative m-20 p-10 sm:w-[70%] animate-on-scroll">
+              <p class="text-sm text-[#D73D35] font-bold mb-2">WHY ENTEC</p>
+              <p class="text-3xl font-bold text-green-900 mb-8">
+                Experience luxury aerospace products
               </p>
-              <p class="text-2xl text-[#D73D35] font-bold mb-8">
+              <p class="text-sm text-[#D73D35] font-bold mb-8">
                 There are many variations of passage of lorem available but the
                 majority alteration.
               </p>
-              <p class="text-2xl text-[#79817C] font-'DM Sans' mb-8">
+              <p class="text-sm text-[#79817C] font-'DM Sans' mb-8 font-thin font-light leading-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Curabiturcondimentum, lacus non faucibus congue, lectus quam
-                viverra<br />nulla, quis egestas neque sapien ac magna.>
+                viverra nulla, quis egestas neque sapien ac magna.>
               </p>
               <div class="flex items-center">
                 <div class="section-list-item-2">
                   <div class="symbol-5"></div>
                 </div>
-                <p class="ml-2">Security Aerospace</p>
+                <p class="ml-2 text-sm font-bold">Security Aerospace</p>
                 <div class="section-list-item-2 ml-4">
                   <div class="symbol-5"></div>
                 </div>
-                <p class="ml-2">Certified Aerospace</p>
+                <p class="ml-2 text-sm font-bold">Certified Aerospace</p>
               </div>
               <a href=""
                 ><button
-                  class="py-5 px-5 mr-3 bg-red-500 rounded-full text-white mt-5 font-bold font-montserrat"
+                  class="py-5 px-5 mr-3 bg-red-500 rounded-full text-white mt-5 font-bold font-montserrat text-sm"
                 >
                   DISCOVER MORE
                 </button></a
@@ -986,9 +993,9 @@
             class="page__requirements__content flex w-full h-full justify-center absolute top-0 left-0 slide-up"
           >
             <div class="page__req__main__content text-center">
-              <h2 class="text-2xl text-white mt-10 italic">SUPPORT</h2>
+              <h2 class="text-xl text-white mt-10 italic">SUPPORT</h2>
 
-              <h2 class="text-5xl text-white mt-5 font-bold mb-5">
+              <h2 class="text-3xl text-white mt-5 font-bold mb-5">
                 Always available to help across all <br />
                 our installation locations
               </h2>
@@ -1000,12 +1007,12 @@
         <div class="container mx-auto mt-10 p-4">
           <!-- Headings -->
           <h4
-            class="text-2xl text-[#2a4c95] mb-2 flex justify-center italic font-bold slide-up"
+            class="text-sm text-[#2a4c95] mb-2 flex justify-center italic font-bold slide-up"
           >
             BLOG &amp; NEWS
           </h4>
           <h2
-            class="text-5xl text-[#2a4c95] font-semibold mb-28 flex justify-center font-bold slide-up"
+            class="text-2xl text-[#2a4c95] font-semibold mb-28 flex justify-center font-bold slide-up"
           >
             Our Latest Blog &amp; News
           </h2>
@@ -1018,11 +1025,11 @@
               <!-- Card 1 -->
               <div class="bg-white p-4 shadow-md relative slide-right">
                 <div class="absolute top-[-14px] left-12 bg-red-500 px-6 py-4">
-                  <p class="text-white text-5xl font-semibold">25</p>
-                  <p class="text-white text-2xl">AUG</p>
+                  <p class="text-white text-xl font-semibold">25</p>
+                  <p class="text-white text-sm font-thin">AUG</p>
                 </div>
                 <img
-                  class="w-full h-64 object-cover mb-4"
+                  class="w-full h-[13rem] object-cover mb-4"
                   src="img/rectangle-2.png"
                   alt="Image 1"
                 />
@@ -1034,12 +1041,12 @@
                   </button></a
                 >
 
-                <p class="text-xl font-montserrat text-black mt-4 font-bold">
+                <p class="text-sm font-montserrat text-black mt-4 font-bold">
                   Quick and Easy Flaky Pastry for Tasty <br />
                   Breakfast
                 </p>
                 <a href=""
-                  ><h3 class="text-red-500 text-lg font-bold mt-4">
+                  ><h3 class="text-red-500 text-sm font-thin mt-4">
                     READ MORE
                   </h3></a
                 >
@@ -1048,11 +1055,11 @@
               <!-- Card 2 -->
               <div class="bg-white p-4 shadow-md relative slide-left">
                 <div class="absolute top-[-14px] left-12 bg-white px-6 py-4">
-                  <p class="text-black text-5xl font-semibold">25</p>
-                  <p class="text-black text-2xl">AUG</p>
+                  <p class="text-black text-xl font-semibold">25</p>
+                  <p class="text-black text-sm font-thin">AUG</p>
                 </div>
                 <img
-                  class="w-full h-64 object-cover mb-4"
+                  class="w-full h-[13rem] object-cover mb-4"
                   src="img/blog-img-2.png"
                   alt="Image 2"
                 />
@@ -1064,12 +1071,12 @@
                   </button></a
                 >
 
-                <p class="text-xl font-montserrat text-black mt-4 font-bold">
+                <p class="text-sm font-montserrat text-black mt-4 font-bold">
                   Quick and Easy Flaky Pastry for Tasty <br />
                   Breakfast
                 </p>
                 <a href=""
-                  ><h3 class="text-red-500 text-lg font-bold mt-4">
+                  ><h3 class="text-red-500 text-sm  font-thin mt-4">
                     READ MORE
                   </h3></a
                 >
@@ -1078,11 +1085,11 @@
               <!-- Card 3 -->
               <div class="bg-white p-4 shadow-md relative slide-up">
                 <div class="absolute top-[-14px] left-12 bg-white px-6 py-4">
-                  <p class="text-black text-5xl font-semibold">25</p>
-                  <p class="text-black text-2xl font-bold">AUG</p>
+                  <p class="text-black text-xl font-semibold">25</p>
+                  <p class="text-black text-sm font-thin">AUG</p>
                 </div>
                 <img
-                  class="w-full h-64 object-cover mb-4"
+                  class="w-full h-[13rem] object-cover mb-4"
                   src="img/rectangle-2.png"
                   alt="Image 3"
                 />
@@ -1094,12 +1101,12 @@
                   </button></a
                 >
 
-                <p class="text-xl text-black mt-4 font-bold">
+                <p class="text-sm text-black mt-4 font-bold">
                   Quick and Easy Flaky Pastry for Tasty <br />
                   Breakfast
                 </p>
                 <a href=""
-                  ><h3 class="text-red-500 text-lg font-bold mt-4">
+                  ><h3 class="text-red-500 text-sm font-thin mt-4">
                     READ MORE
                   </h3></a
                 >
@@ -1215,11 +1222,20 @@
       </styl> -->
     </div>
 
-    <script>
+    <!-- <script>
       function toggleMenu() {
         var menuList = document.getElementById("menu-list");
         menuList.style.display =
           menuList.style.display === "flex" ? "" : "flex";
+      }
+    </script> -->
+    <script>
+      function toggleMenu() {
+       document.querySelector(".nav-menu").style.top="0";
+        
+      }
+      function closeMenu(){
+        document.querySelector(".nav-menu").style.top="-100vh";
       }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
