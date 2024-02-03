@@ -806,8 +806,8 @@ align-items: center;
     }
     
  .span-icon-quote {
-      width: 67px;
-      height: 67px;
+      /* width: 67px;
+      height: 67px; */
       background-color: var(--primary-red);
       border-radius: 33.5px;
       margin-top: -90px;
