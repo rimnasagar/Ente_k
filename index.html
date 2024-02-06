@@ -99,9 +99,26 @@
 </ul>
 
     </div>
-<i class="fas fa-times text-white text-2xl absolute top-5 right-5" onclick="closeMenu()"></i>
+<i class="fas fa-times text-white text-2xl absolute top-5 right-5" id="closeButton" onclick="closeMenu()"></i>
 
     </div>
+
+    <!-- VIDEO POPUP -->
+    <div class="video-popup flex justify-center items-center fixed -top-[100vh] left-0 h-screen w-full z-[999999] 
+    bg-[#2a4c95] transition ease-in-out">
+    <div class="nav-items w-[50%] h-[80%] text-white font-montserrat text-4xl text-center flex items-center justify-center">
+      <video width="640" height="540" controls id="myVideo" >
+        <source src="img/entek.mp4" type="video/mp4" >
+        
+      </video>
+
+    </div>
+    <button id="closeButton">  
+<i class="fas fa-times text-white text-2xl absolute top-5 right-5" onclick="closeVideo()"></i>
+</button>
+
+    </div>
+
     <div class="page">
       <section class="determined to dream ">
         <div class=" w-full h-full bg-[#E7E7E7] relative ">
@@ -293,7 +310,7 @@
                 class="w-[80%] mx-auto sm:mx-0 sm:w-full h-auto"
                 alt="Your Image"
               />
-              <div class="absolute bottom-[60px] -right-8 sm:right-[-60px]">
+              <div class="absolute bottom-[60px] -right-[1rem] sm:right-[-60px]">
                 <div
                   style="padding: 10px; overflow: hidden"
                   class="bg-red-600 text-white w-52 md:w-96 md:h-24 lg:block sm:hidden md:block "
@@ -911,7 +928,7 @@
               class="page__requirements__content flex w-full h-full justify-center items-center absolute top-0 left-0"
             >
               <div class="page__req__main__content text-center w-fit">
-                <img src="img/link.svg" alt="" class="mx-auto" />
+                <img src="img/link.svg" alt="" class="mx-auto" onclick="openVideo()" />
                 <h2 class="text-3xl text-white my-10 slide-up font-semibold">
                   Share requirements and our<br />experts will send you a quote
                 </h2>
@@ -1135,12 +1152,12 @@
               </p>
             </div>
             <div
-              class="slide-left footer__content__newsletter__form  flex items-center justify-center sm:justify-end w-[40%] sm:w-[100%]   "
+              class="mt-2 mb-2 sm:mt-0 sm:mb-0 slide-left footer__content__newsletter__form  flex flex-col sm:flex-row items-center justify-center sm:justify-end w-[40%] sm:w-[100%]   "
             >
             
               <!-- <img src="img/user.svg" class="" />
               <input type="text" placeholder="Enter your email" /> -->
-              <div class="relative">
+              <div class="relative mb-2 sm:mb-0">
                 <input type="text" placeholder="Enter your email" class="" />
                 <img src="img/user.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2" />
               </div>
@@ -1237,6 +1254,30 @@
       function closeMenu(){
         document.querySelector(".nav-menu").style.top="-100vh";
       }
+    </script>
+     <script>
+      function openVideo() {
+       document.querySelector(".video-popup").style.top="0";
+        
+      }
+      function closeVideo(){
+        document.querySelector(".video-popup").style.top="-100vh";
+      }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        
+        var video = document.getElementById('myVideo');
+        var closeButtonIcon = document.querySelector('#closeButton i');
+
+    
+    closeButtonIcon.addEventListener('click', function() {
+      
+      video.pause();
+     
+      video.currentTime = 0;
+    });
+  });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
@@ -1438,5 +1479,6 @@
         });
       });
     </script>
+    
   </body>
 </html>
