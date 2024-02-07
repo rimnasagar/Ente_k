@@ -1815,7 +1815,7 @@ line-height: 24.238px;
         height: 120px;
     }
     .footer__content__about__social__logo span {
-        font-size: 12px;
+        /* font-size: 12px; */
         color: #ccc;
     }
     .footer__content__about__social__icons {
@@ -1842,8 +1842,9 @@ line-height: 24.238px;
       width: 30px;
       height: 30px;
       border:  1px solid #fff;
-      border-radius: 15px;
-      border-radius: 30px;
+      /* border-radius: 15px; */
+      /* border-radius: 30px; */
+     
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1851,16 +1852,21 @@ line-height: 24.238px;
     }
     .footer__content__about__social__icons img {
         width: 12px;
+        transform: rotate(-30deg);
     }
     .footer__content__about__social__icons span {
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 35px;
         border:  1px solid #fff;
-        border-radius: 30px;
+        
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         object-fit: cover;
+        border:  1px solid #fff;
+        border-radius: 63%/70%;
+        transform: rotate(30deg);
+        /* border-radius: 30px; */
     }
     .footer__content__about__link {
         display: flex;
@@ -1885,7 +1891,7 @@ line-height: 24.238px;
     }
     .footer__content__about__link__row a {
         color: #D9D9D9;
-        font-size: 12px;
+        /* font-size: 12px; */
     }
     .footer__content__privacy {
         display: flex;
@@ -1894,12 +1900,12 @@ line-height: 24.238px;
         padding: 1rem 0;
     }
     .footer__content__privacy__year {
-        font-size: 12px;
+        /* font-size: 12px; */
     }
     .footer__content__privacy__links {
         display: flex;
         column-gap: 2rem;
-        font-size: 10px;
+        /* font-size: 10px; */
     }
     .footer__content__privacy__links a {
         text-decoration: none;
