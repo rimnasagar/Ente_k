@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="scroll-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+
+
+ 
+   
+    <title>Entek</title>
+    <style>
+      
+      .slider-container {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      .slick-prev,
+      .slick-next {
+        font-size: 24px;
+        color: #2a4c95;
+      }
+    </style>
+
+    
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="/Entek_Git/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
+    />
+    <!-- Include Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <!-- Include Slick Theme CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="nav-menu flex justify-center items-center fixed -top-[100vh] left-0 h-screen w-full z-[999999] 
+    bg-[#2a4c95] transition ease-in-out">
+    <div class="nav-items w-[50%] h-[80%] text-white font-montserrat text-4xl text-center">
+<ul class="h-full flex flex-col justify-evenly items-center">
+  <a class="w-fit" href=""><li>HOME</li></a>
+  <a class="w-fit" href=""><li>ABOUT</li></a>
+    <a class="w-fit" href=""><li>PRODUCTS</li></a>
+      <a class="w-fit" href=""><li>SOLUTIONS</li></a>
+        <a class="w-fit" href=""><li>SUPPORT</li></a>
+          <a class="w-fit" href=""><li>CAREER</li></a>
+
+
+
+
+</ul>
+
+    </div>
+<i class="fas fa-times text-white text-2xl absolute top-5 right-5" id="closeButton" onclick="closeMenu()"></i>
+
+    </div>
+
+   
+
+    <div class="page">
+      <section class="determined to dream ">
+        <div class=" w-full h-full bg-[#FFF] relative ">
+          <div
+            class="bg-[#2a4c95] w-full   overflow-hidden"
+          >
+            <img
+              src="img/image_abtus.png"
+              alt=""
+              class="opacity-25 w-full h-full "
+            />
+            
+          </div>
+          
+          <div class="page__overlap__header absolute sm:top-0 top-[-26px] sm:left-0 left-[30px]">
+            <div class="page__overlap__header__logo">
+              <img
+                class="page__overlap__header__logo__img w-[50%] sm:w-[100%]"
+                src="img/logo.svg"
+              />
+            </div>
+            <label class="menu-button-lbel" for="menu-toggle">
+              <div
+                class="menu-button"
+                id="menu-button-toggle"
+                onclick="toggleMenu()"
+              ></div>
+            </label>
+            <div class="page__overlap__header__menu w-full">
+              
+              <div class="menu-list w-full justify-evenly px-20" id="menu-list">
+                <a href="#"><div class="text-wrapper">HOME</div></a>
+
+                <a href="#"> <div class="text-wrapper">ABOUT</div></a>
+                <a href="#"> <div class="text-wrapper">PRODUCTS</div></a>
+                <a href="#"> <div class="text-wrapper">SOLUTIONS</div></a>
+                <a href="#"> <div class="text-wrapper">SUPPORT</div></a>
+                <a href="#"> <div class="text-wrapper">CAREER</div></a>
+              </div>
+            </div>
+            <div class="page__overlap__header__content flex flex-col">
+              <div class="contact-us">
+                <div class="header-nav">
+                  <img class="symbol" src="img/symbol.png" />
+                </div>
+                <div class="contact-content">
+                  <div class="header-nav-call">Call Anytime</div>
+                  <p class="header-nav-heading ">+92 ( 8800 ) - 6780</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="page__requirements__content flex w-full h-full justify-center  items-end xl:mt-[200px]  "
+          >
+            
+            <div class="page__req__main__content text-center absolute bottom-[4.5rem] md:bottom-[7.5rem] lg:bottom-[8.5rem]  xl:bottom-[21.5rem]">
+              <h5
+                class="text-xl sm:text-2xl md:3xl lg:text-4xl xl:text-5xl 2xl:text-[5xl]  text-white   font-extrabold italic slide-up"
+              >
+               ABOUT US
+              </h5>
+
+              
+              <button class="bg-white text-black absolute -bottom-[11rem] left-[2rem] px-10 py-5 rounded-full font-extrabold ">HOME/ABOUT US</button>  
+            </div>
+            
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="page__aboutus bg-[#FFF] pt-[10rem] sm:pt-[0rem]  pb-[4rem] sm:pb-[8rem]">
+        <div class="flex justify-between  w-[90%] md:w-[80%] bg-[#FFF] lg:flex-row flex-col-reverse mx-auto">
+          <!-- Left Section -->
+
+          <div class="flex justify-center right-section slide-left md:mt-5 lg:mt-0">
+
+            
+            <div class="relative">
+              <img
+                src="img/Rectangle15.png"
+                class="w-[85%] mx-auto sm:mx-0 md:w-[95%] lg:w-[80%] h-auto relative inset-0 z-10"
+                alt="Your Image"
+              />
+              
+                <img src="img/Rectangleabtus.png" alt="" class="absolute inset-0 z-0 my-auto h-[80%]">
+                
+              
+            </div>
+          </div>
+<!-- Left -->
+
+       
+
+          <!-- Right Section -->
+          <div
+          class="flex flex-col justify-center md:mx-auto md:w-[80%] lg:w-[40%] left-section mt-5 md:mt-8 lg:mt-0 md:ml-8 lg:ml-0 p-5 sm:p-0"
+        >
+          <h2
+            class="text-sm font-bold mb-5 text-[#2a4c95] 2xl:text-xl italic font-montserrat slide-right"
+          >
+            ABOUT US
+          </h2>
+          <h5
+            class=" text-4xl 2xl:text-6xl  font-bold mb-5 text-[#2a4c95] font-montserrat line-height-[1.2] slide-left"
+          >
+            Our jetly save your time and give you comfort in flights
+          </h5>
+          <p
+            class="text-sm 2xl:text-xl font-montserrat text-[#2a4c95] leading-6 mb-2 slide-right"
+          >
+            Non augue egestas, commodo velit eget, vestibulum tellus.
+            Curabitur vulputate justo elit, at elementum orci pulvinar
+            vel. Pellentesque habitant morbi tristique. Pellentesque habitant morbi tristique. Ut non augue
+            egestas,commodo velit eget, vestibulum tellus.
+          </p>
+          <div class="flex items-center mt-5 slide-left">
+            <img class="mr-2" src="img/check.svg" />
+            <p class="text-[#2a4c95] text-sm 2xl:text-xl font-bold mt-2 mb-2">
+              There are many variations of passage of lorem.
+            </p>
+          </div>
+          <div class="flex items-center slide-right">
+            <img class="mr-2" src="img/check.svg" />
+            <p class="text-[#2a4c95] text-sm 2xl:text-xl font-bold mt-2 mb-2">
+              There are many variations of passage of lorem.
+            </p>
+          </div>
+          
+         
+        </div>
+        </div>
+      </section>
+
+      <section name="mission"  class="pb-[3rem] bg-[#D73D351A]">
+
+        <div class="flex justify-between  w-[90%] md:w-[80%]  lg:flex-row flex-col-reverse mx-auto">
+            <!-- Left Section -->
+  
+            <div
+            class="flex flex-col justify-center md:mx-auto md:w-[80%] lg:w-[40%] left-section mt-5 md:mt-8 lg:mt-10 md:ml-8 lg:ml-0 p-5 sm:p-0"
+          >
+            
+            <h5
+              class=" text-4xl 2xl:text-6xl  font-bold mb-5 text-black font-montserrat line-height-[1.2] slide-left"
+            >
+            How we support our partner all over the world
+            </h5>
+            <p
+              class="text-sm 2xl:text-xl font-montserrat text-black leading-6 mb-2 slide-right"
+            >
+            SaaS become a common delivery model for many business application, including office software, messaging software, payroll processing software, DBMS software, management software
+            </p>
+            <div class="flex justify-start  mt-5 slide-left">
+              
+              <div><p class="text-[#FFD700] lg:text-xl 2xl:text-xl">&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+                
+              <div class="ml-20"><p class="text-[#FFD700] lg:text-xl 2xl:text-xl">&#9733;&#9733;&#9733;&#9733; <span class="text-[#D3D3D3]">&#9733;</span></p></div>
+            </div>
+
+            <div class="flex justify-start  mt-5 slide-left">
+              
+                <div><p class="text-black text-sm 2xl:text-xl"><span class="font-bold">4.9</span>/5 rating</p></div>
+                <div class="ml-20"><p class="text-black text-sm 2xl:text-xl"><span class="font-bold">4.8</span>/5 rating</p></div>
+                  
+                
+              </div>
+
+              <div class="flex justify-start  mt-5 slide-left">
+                <div class=""><p class="text-[#A6A6A6] text-sm  2xl:text-xl font-bold">databricks</p></div>
+                <div class="ml-20"><p class="text-[#A6A6A6] text-sm 2xl:text-xl font-bold">Chainalysis</p></div>
+                  
+               
+              </div>
+           
+            
+           
+          </div>
+  <!-- Left -->
+  
+         
+  
+            <!-- Right Section -->
+            <div
+            class="flex flex-col justify-center md:mx-auto md:w-[80%] lg:w-[40%] left-section mt-5 md:mt-8 lg:mt-20 md:ml-8 lg:ml-0 p-5 sm:p-0"
+          >
+          <div class="mb-5">
+            <div class="flex">
+          <div
+          class="mb-2 inline-block w-[52px] h-[48px] rounded-lg overflow-hidden bg-white flex items-center justify-center"
+          style="border-radius: 10.107px"
+        >
+          <img
+            class=""
+            src="img/pie-chart1.svg"
+            style="width: 30.322px; height: 30.322px"
+            alt="Your Image"
+          />
+        </div>
+            <h5
+              class="ml-5 text-2xl 2xl:text-4xl  font-bold mb-5 text-black font-montserrat line-height-[1.2] slide-left"
+            >
+              Our Mission
+            </h5>
+        </div>
+            <p
+              class="text-sm 2xl:text-xl font-montserrat text-black leading-6 mb-2 slide-right"
+            >
+              Non augue egestas, commodo velit eget, vestibulum tellus.
+              Curabitur vulputate justo elit, at elementum orci pulvinar
+              vel. Pellentesque habitant morbi tristique. Pellentesque habitant morbi tristique. Ut non augue
+              egestas,commodo velit eget, vestibulum tellus.
+            </p>
+            </div>
+            <div>
+                <div class="flex">
+              <div
+              class="mb-2 inline-block w-[52px] h-[48px] rounded-lg overflow-hidden bg-white flex items-center justify-center"
+              style="border-radius: 10.107px"
+            >
+              <img
+                class=""
+                src="img/command1.svg"
+                style="width: 30.322px; height: 30.322px"
+                alt="Your Image"
+              />
+            </div>
+                <h5
+                  class="ml-5 text-2xl 2xl:text-4xl  font-bold mb-5 text-black font-montserrat line-height-[1.2] slide-left"
+                >
+                  Our Vision
+                </h5>
+            </div>
+                <p
+                  class="text-sm 2xl:text-xl font-montserrat text-black leading-6 mb-2 slide-right"
+                >
+                  Non augue egestas, commodo velit eget, vestibulum tellus.
+                  Curabitur vulputate justo elit, at elementum orci pulvinar
+                  vel. Pellentesque habitant morbi tristique. Pellentesque habitant morbi tristique. Ut non augue
+                  egestas,commodo velit eget, vestibulum tellus.
+                </p>
+                </div>
+            
+           
+          </div>
+          </div>
+
+        
+      </section>
+      <section class="page__discover w-full h-auto -mb-[3rem] sm:mb-[4rem] pt-[5rem] ">
+        <div class="flex flex-col lg:flex-row justify-between sm:items-center ml-10 sm:ml-0">
+          <!-- Left Section -->
+          <div class="w-[70%] sm:w-[50%] flex justify-center left-section slide-right sm:ml-[4rem] ml-0">
+            <div class="sm:mb-40 relative w-fit flex sm:justify-center justify-start mr-4 sm:mr-0">
+              <img class="w-[80%]  sm:w-auto" src="img/image-6.png" />
+              <img
+                class="absolute sm:top-[14rem] sm:left-[9rem] top-20 left-[7rem]  w-[80%] sm:w-auto"
+                src="img/image-5.png"
+              />
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div
+            class="flex sm:justify-center justify-start sm:items-center  mt-[2rem] sm:ml-[10px] ml-[-55px]  md:w-[95%] lg:w-[50%] right-section slide-left"
+          >
+            <div class="relative m-5 p-10 sm:w-[66%] animate-on-scroll">
+              <p class="text-sm 2xl:text-xl text-[#D73D35] font-bold mb-2">WHY ENTEC</p>
+              <p class="text-3xl 2xl:text-4xl font-bold text-green-900 mb-8">
+                Experience luxury aerospace products
+              </p>
+              <p class="text-sm 2xl:text-xl text-[#D73D35] font-bold mb-8">
+                There are many variations of passage of lorem  available but the
+                majority alteration.
+              </p>
+              <p class="text-sm 2xl:text-xl text-[#79817C] font-'DM Sans' mb-8 font-thin font-light leading-[1.5rem]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabiturcondimentum, lacus non faucibus congue, lectus quam
+                viverra nulla, quis egestas neque sapien ac magna.>
+              </p>
+              <div class="flex items-center">
+                <div class="section-list-item-2">
+                  <div class="symbol-5"></div>
+                </div>
+                <p class="ml-2 text-sm 2xl:text-xl font-bold">Security Aerospace</p>
+                <div class="section-list-item-2 ml-4">
+                  <div class="symbol-5"></div>
+                </div>
+                <p class="ml-2 text-sm 2xl:text-xl font-bold">Certified Aerospace</p>
+              </div>
+              <a href=""
+                ><button
+                  class="py-5 px-5 mr-3 bg-red-500 rounded-full text-white mt-5 font-bold font-montserrat text-sm 2xl:text-xl"
+                >
+                  DISCOVER MORE
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section name="our__facilities">
+        <div class="flex flex-col lg:flex-row justify-between sm:items-center ml-10 sm:ml-0">
+    <!-- Left Section -->
+
+    <div
+    class="flex sm:justify-center justify-start sm:items-center  mt-[2rem] sm:ml-[10px] ml-[-55px]  md:w-[95%] lg:w-[50%] right-section slide-left"
+  >
+    <div class="relative m-5 p-10 sm:w-[66%] animate-on-scroll">
+      
+      <p class="text-3xl 2xl:text-4xl font-bold text-green-900 mb-8">
+        Our Facility
+      </p>
+
+      <div class="flex items-center mb-8">
+        <div class="section-list-item-2">
+          <div class="symbol-5"></div>
+        </div>
+        <p class="ml-2 text-sm 2xl:text-xl font-bold">Security Aerospace</p>
+        <div class="section-list-item-2 ml-4">
+          <div class="symbol-5"></div>
+        </div>
+        <p class="ml-2 text-sm 2xl:text-xl font-bold ">Certified Aerospace</p>
+      </div>
+      <p
+            class="text-sm 2xl:text-xl font-montserrat text-[#2a4c95] leading-6 mb-2 slide-right"
+          >
+            Non augue egestas, commodo velit eget, vestibulum tellus.
+            Curabitur vulputate justo elit, at elementum orci pulvinar
+            vel. Pellentesque habitant morbi tristique. Pellentesque habitant morbi tristique. Ut non augue
+            egestas,commodo velit eget, vestibulum tellus.
+          </p>
+          <div class="flex items-center mt-5 slide-left">
+            <img class="mr-2" src="img/check.svg" />
+            <p class="text-[#2a4c95] text-sm 2xl:text-xl font-bold mt-2 mb-2">
+              There are many variations of passage of lorem.
+            </p>
+          </div>
+          <div class="flex items-center slide-right mb-2">
+            <img class="mr-2" src="img/check.svg" />
+            <p class="text-[#2a4c95] text-sm 2xl:text-xl font-bold mt-2 mb-2">
+              There are many variations of passage of lorem.
+            </p>
+          </div>
+          
+          <p
+          class="text-sm 2xl:text-xl font-montserrat text-[#2a4c95] leading-6 mb-2 slide-right"
+        >
+          Non augue egestas, commodo velit eget, vestibulum tellus.
+          Curabitur vulputate justo elit, at elementum orci pulvinar
+          vel. Pellentesque habitant morbi tristique. Pellentesque habitant morbi tristique. Ut non augue
+          egestas,commodo velit eget, vestibulum tellus.
+        </p>
+      
+      
+    </div>
+  </div>
+   
+
+<!--End Left Section  -->
+
+<!-- Right Section -->
+
+<div class=" right-section slide-left md:mt-5 lg:mt-0">
+
+            
+    <div class="relative">
+      <img
+        src="img/Rectangle93.png"
+        class="w-[85%] mx-auto sm:mx-0 md:w-[95%] lg:w-[80%] h-auto relative "
+        alt="Your Image"
+      />
+       
+           
+          <button class="absolute bottom-[5rem] -left-[6rem] text-black bg-white px-10 py-5 flex items-center font-bold"> <img src="img/circle1.png" class="mr-2" /><p>Private Aircraft</p></button>
+        
+        
+        
+      
+    </div>
+  </div>
+
+
+<!-- End Right Section -->
+      </section>
+
+      <section name="facilities_1">
+        <div class="flex flex-col lg:flex-row justify-center sm:items-center sm:ml-[2rem] ml-[-55px]">
+
+     <!-- Left Section -->
+     <div class="flex  justify-center right-section slide-left md:mt-5 lg:mt-0 ">
+
+            
+        <div class="relative">
+          <img
+            src="img/facilities.png"
+            class="w-[85%] mx-auto sm:mx-0 md:w-[95%] lg:w-[80%] h-auto relative "
+            alt="Your Image"
+          />
+           
+               
+              <button class="absolute bottom-[5rem] -left-[6rem] text-black bg-white px-10 py-5 flex items-center font-bold"> <img src="img/circle1.png" class="mr-2" /><p>Private Aircraft</p></button>
+            
+            
+            
+          
+        </div>
+      </div>
+     <!-- End Left Section -->
+
+     <!-- Right Section -->
+
+     <div
+    class="flex sm:justify-center justify-start sm:items-center  mt-[2rem] sm:ml-[10px] ml-[-55px]  md:w-[95%] lg:w-[50%] right-section slide-left"
+  >
+    <div class="relative m-5 p-10 sm:w-[66%] animate-on-scroll">
+      
+      <p class="text-3xl 2xl:text-4xl font-bold text-green-900 mb-8">
+        Our Facility
+      </p>
+
+      <div class="flex items-center mb-8">
+        <div class="section-list-item-2">
+          <div class="symbol-5"></div>
+        </div>
+        <p class="ml-2 text-sm 2xl:text-xl font-bold">Security Aerospace</p>
+        <div class="section-list-item-2 ml-4">
+          <div class="symbol-5"></div>
+        </div>
+        <p class="ml-2 text-sm 2xl:text-xl font-bold ">Certified Aerospace</p>
+      </div>
+      <p
+            class="text-sm 2xl:text-xl font-montserrat text-[#2a4c95] leading-6 mb-2 slide-right"
+          >
+            Non augue egestas, commodo velit eget, vestibulum tellus.
+            Curabitur vulputate justo elit, at elementum orci pulvinar
+            vel. Pellentesque habitant morbi tristique. Pellentesque habitant morbi tristique. Ut non augue
+            egestas,commodo velit eget, vestibulum tellus.
+          </p>
+          <div class="flex items-center mt-5 slide-left">
+            <img class="mr-2" src="img/check.svg" />
+            <p class="text-[#2a4c95] text-sm 2xl:text-xl font-bold mt-2 mb-2">
+              There are many variations of passage of lorem.
+            </p>
+          </div>
+          <div class="flex items-center slide-right mb-2">
+            <img class="mr-2" src="img/check.svg" />
+            <p class="text-[#2a4c95] text-sm 2xl:text-xl font-bold mt-2 mb-2">
+              There are many variations of passage of lorem.
+            </p>
+          </div>
+          
+          <p
+          class="text-sm 2xl:text-xl font-montserrat text-[#2a4c95] leading-6 mb-2 slide-right"
+        >
+          Non augue egestas, commodo velit eget, vestibulum tellus.
+          Curabitur vulputate justo elit, at elementum orci pulvinar
+          vel. Pellentesque habitant morbi tristique. Pellentesque habitant morbi tristique. Ut non augue
+          egestas,commodo velit eget, vestibulum tellus.
+        </p>
+      
+      
+    </div>
+  </div>
+   
+     <!--End Right Section -->
+
+
+      </section>
+
+      
+  
+      
+      <section class="page__team  w-full h-auto">
+        <div class="page__team__parent bg-[#FFF] w-full h-full ">
+          
+          <div
+            class="page__requirements__content flex w-full h-full justify-center "
+          >
+            <div class="page__req__main__content text-center">
+              <h2 class="text-xl 2xl:text-2xl text-[#2a4c95] -mt-[1.5rem] italic font-semibold">OUR TEAM</h2>
+
+              <h2 class=" text-2xl md:text-4xl 2xl:text-6xl text-[#2a4c95] mt-[0.25rem] font-extrabold mb-10">
+                we take pride in our diverse and <br/>  talented team of professionals 
+              </h2>
+
+              <div class="flex flex-col items-center  justify-center ">
+                <div class="flex">   
+                    <div class=""><img class="w-[60%] mx-auto" src="img/a.png">
+                        <p class="text-xl font-semibold text-[#030211]">David James</p>
+                        <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                        <div><img class="w-[60%] mx-auto" src="img/b.png">
+                            <p class="text-xl font-semibold text-[#030211]">David James</p>
+                            <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                            <div><img class="w-[60%] mx-auto" src="img/c.png">
+                                <p class="text-xl font-semibold text-[#030211]">David James</p>
+                                <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                
+            </div> 
+    
+                </div>
+            <div class="flex flex-col items-center  justify-center ">
+                <div class="flex">   
+                    <div class=""><img class="w-[60%] mx-auto" src="img/a.png">
+                        <p class="text-xl font-semibold text-[#030211]">David James</p>
+                        <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                        <div><img class="w-[60%] mx-auto" src="img/b.png">
+                            <p class="text-xl font-semibold text-[#030211]">David James</p>
+                            <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                            <div><img class="w-[60%] mx-auto" src="img/c.png">
+                                <p class="text-xl font-semibold text-[#030211]">David James</p>
+                                <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                
+            </div> 
+    
+                </div>
+
+                
+        
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__team  w-full h-auto mt-[4rem] ">
+        <div class="page__team__parent bg-[#FFF] w-full h-full ">
+          
+          <div
+            class="page__requirements__content flex w-full h-full justify-center "
+          >
+            <div class="page__req__main__content text-center">
+              <h2 class="text-xl 2xl:text-2xl text-[#2a4c95] -mt-[1.5rem] italic font-semibold">OUR DELIVERY TEAM</h2>
+
+              <h2 class=" text-2xl md:text-4xl 2xl:text-6xl text-[#2a4c95] mt-[0.25rem] font-extrabold mb-10">
+                We ensuring swift and secure <br/> delivery of your orders.
+              </h2>
+
+              <div class="flex flex-col items-center  justify-center ">
+                <div class="flex">   
+                    <div class=""><img class="w-[60%] mx-auto" src="img/a.png">
+                        <p class="text-xl font-semibold text-[#030211]">David James</p>
+                        <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                        <div><img class="w-[60%] mx-auto" src="img/b.png">
+                            <p class="text-xl font-semibold text-[#030211]">David James</p>
+                            <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                            <div><img class="w-[60%] mx-auto" src="img/c.png">
+                                <p class="text-xl font-semibold text-[#030211]">David James</p>
+                                <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+
+                                <div class=""><img class="w-[60%] mx-auto" src="img/a.png">
+                                    <p class="text-xl font-semibold text-[#030211]">David James</p>
+                                    <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                                    <div><img class="w-[60%] mx-auto" src="img/b.png">
+                                        <p class="text-xl font-semibold text-[#030211]">David James</p>
+                                        <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                                        <div><img class="w-[60%] mx-auto" src="img/c.png">
+                                            <p class="text-xl font-semibold text-[#030211]">David James</p>
+                                            <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                
+            </div> 
+    
+                </div>
+                <div class="flex flex-col items-center  justify-center ">
+                    <div class="flex">   
+                        <div class=""><img class="w-[60%] mx-auto" src="img/a.png">
+                            <p class="text-xl font-semibold text-[#030211]">David James</p>
+                            <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                            <div><img class="w-[60%] mx-auto" src="img/b.png">
+                                <p class="text-xl font-semibold text-[#030211]">David James</p>
+                                <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                                <div><img class="w-[60%] mx-auto" src="img/c.png">
+                                    <p class="text-xl font-semibold text-[#030211]">David James</p>
+                                    <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                                    <div class=""><img class="w-[60%] mx-auto" src="img/a.png">
+                                        <p class="text-xl font-semibold text-[#030211]">David James</p>
+                                        <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                                        <div><img class="w-[60%] mx-auto" src="img/b.png">
+                                            <p class="text-xl font-semibold text-[#030211]">David James</p>
+                                            <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                                            <div><img class="w-[60%] mx-auto" src="img/c.png">
+                                                <p class="text-xl font-semibold text-[#030211]">David James</p>
+                                                <p class="text-sm font-light text-[#7C7C7C]">Web App </p></div>
+                    
+                </div> 
+        
+                    </div>
+
+                
+        
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__awards w-full h-auto ">
+        <div class="page__awards__parent bg-[#2a4c95] w-full h-full">
+          
+          <div
+            class="page__awards__content flex w-full h-full justify-center slide-up"
+          >
+            <div class="page__req__main__content text-center">
+              <h2 class="text-xl 2xl:text-2xl text-white -mt-[1.5rem] italic font-semibold">AWARDS</h2>
+
+              <h2 class=" text-2xl md:text-4xl 2xl:text-6xl text-white mt-[0.25rem] font-semibold mb-5">
+                What they’re talking about <br/>
+our flight services
+              </h2>
+
+              <div
+              class="page__requirements__certificates  w-full h-full absolute  slide-up"
+            >
+              <div class="page__req__main__content flex justify-between">
+                <img src="img/cert1.png" />
+                <img src="img/cert2.png" />
+                <img src="img/cert3.png" />
+                <img src="img/cert4.png" />
+              </div>
+            </div>
+
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+
+
+
+      <section class="page__blog mt-[4rem]">
+        <div class="container mx-auto -mt-[2.5rem] p-4">
+          <!-- Headings -->
+          <h4
+            class="text-sm  2xl:text-xl text-[#2a4c95] mb-2 flex justify-center italic font-bold slide-up"
+          >
+            BLOG &amp; NEWS
+          </h4>
+          <h2
+            class="text-3xl 2xl:text-4xl text-[#2a4c95] font-semibold mb-[5rem] flex justify-center font-bold slide-up"
+          >
+            Our Latest Blog &amp; News
+          </h2>
+
+          <!-- Centered Image Cards -->
+          <div class="flex justify-center">
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-4 page_blog_cards animate-on-scroll"
+            >
+              <!-- Card 1 -->
+              <div class="bg-white p-4 shadow-md relative slide-right">
+                <div class="absolute top-[-14px] left-12 bg-red-500 px-6 py-4">
+                  <p class="text-white text-xl 2xl:text-2xl font-semibold">25</p>
+                  <p class="text-white text-sm 2xl:text-xl font-thin">AUG</p>
+                </div>
+                <img
+                  class="w-full h-[13rem] object-cover mb-4"
+                  src="img/rectangle-2.png"
+                  alt="Image 1"
+                />
+                <a href=""
+                  ><button
+                    class="py-1 px-5 mr-3 bg-red-500 rounded-full text-white"
+                  >
+                    aircraft
+                  </button></a
+                >
+
+                <p class="text-sm 2xl:text-xl font-montserrat text-black mt-4 font-bold">
+                  Quick and Easy Flaky Pastry for Tasty <br />
+                  Breakfast
+                </p>
+                <a href=""
+                  ><h3 class="text-red-500 text-sm 2xl:text-xl font-semibold mt-4">
+                    READ MORE
+                  </h3></a
+                >
+              </div>
+
+              <!-- Card 2 -->
+              <div class="bg-white p-4 shadow-md relative slide-left">
+                <div class="absolute top-[-14px] left-12 bg-white px-6 py-4">
+                  <p class="text-black text-xl 2xl:text-2xl font-semibold">25</p>
+                  <p class="text-black text-sm 2xl:text-xl font-thin">AUG</p>
+                </div>
+                <img
+                  class="w-full h-[13rem] object-cover mb-4"
+                  src="img/blog-img-2.png"
+                  alt="Image 2"
+                />
+                <a href=""
+                  ><button
+                    class="py-1 px-5 mr-3 bg-white rounded-full text-red-500 border border-red-500"
+                  >
+                    aircraft
+                  </button></a
+                >
+
+                <p class="text-sm 2xl:text-xl font-montserrat text-black mt-4 font-bold">
+                  Quick and Easy Flaky Pastry for Tasty <br />
+                  Breakfast
+                </p>
+                <a href=""
+                  ><h3 class="text-red-500 text-sm 2xl:text-xl  font-bold mt-4">
+                    READ MORE
+                  </h3></a
+                >
+              </div>
+
+              <!-- Card 3 -->
+              <div class="bg-white p-4 shadow-md relative slide-up">
+                <div class="absolute top-[-14px] left-12 bg-white px-6 py-4">
+                  <p class="text-black text-xl 2xl:text-2xl font-semibold">25</p>
+                  <p class="text-black text-sm 2xl:text-xl font-thin">AUG</p>
+                </div>
+                <img
+                  class="w-full h-[13rem] object-cover mb-4"
+                  src="img/rectangle-2.png"
+                  alt="Image 3"
+                />
+                <a href=""
+                  ><button
+                    class="py-1 px-5 mr-3 bg-white rounded-full text-red-500 border border-red-500"
+                  >
+                    aircraft
+                  </button></a
+                >
+
+                <p class="text-sm 2xl:text-xl text-black mt-4 font-bold">
+                  Quick and Easy Flaky Pastry for Tasty <br />
+                  Breakfast
+                </p>
+                <a href=""
+                  ><h3 class="text-red-500 text-sm 2xl:text-xl font-bold mt-4">
+                    READ MORE
+                  </h3></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="footer__content">
+          <div class="footer__content__text">
+            <p class="text-[19px] sm:text-[57px] text-center slide-down">
+              Producers of Metallic parts &  <br/>
+              global aerospace defence majors
+            </p>
+          </div>
+        </div>
+        <div class="footer__content">
+          <div
+            class="footer__content__newsletter flex justify-center  sm:justify-between"
+          >
+            <div class="footer__content__newsletter__title slide-right">
+              <p class="text-[13px] sm:text-[29px]" >
+                Join our newsletter to <br />
+                keep up to date with us
+              </p>
+            </div>
+            <div
+              class="mt-2 mb-2 sm:mt-0 sm:mb-0 slide-left footer__content__newsletter__form  flex flex-col  lg:flex-row items-center justify-center sm:justify-end w-[40%] sm:w-[100%]   "
+            >
+            
+              <!-- <img src="img/user.svg" class="" />
+              <input type="text" placeholder="Enter your email" /> -->
+              <div class="relative mb-2 lg:mb-0">
+                <input type="text" placeholder="Enter your email" class="" />
+                <img src="img/user.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2" />
+              </div>
+              
+              <button class="sm:w-[153px] w-[133px] flex justify-center"><p>Subscribe</p></button>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="footer__content">
+          <div
+            class="footer__content__about flex justify-center sm:justify-between"
+          >
+            <div class="footer__content__about__social">
+              <div class="footer__content__about__social__logo">
+                <img src="img/logo.svg" />
+                <span class="text-[12px] xl:text-[1rem]"
+                  >We growing up your aerospace <br />
+                  managed componies</span
+                >
+              </div>
+              <div
+                class="footer__content__about__social__icons flex justify-center ml-0 sm:ml-20"
+              >
+                <span class="w-[32px] h-[35px]">
+                  <img class="element w-[12px]" src="img/facebookk.svg" />
+                </span>
+                <span class="w-[32px] h-[35px]">
+                  <img class="element w-[12px]" src="img/linkdin.svg" />
+                </span>
+                <span class="w-[32px] h-[35px]">
+                  <img class="element w-[12px]" src="img/insta.svg" />
+                </span>
+              </div>
+            </div>
+            <div
+              class="footer__content__about__link flex items-center justify-center"
+            >
+              <div class="footer__content__about__link__row text-[12px] xl:text-[1rem] ">
+                <a class="mb-0 sm:mb-2" href="">Platform</a>
+                <a class="mb-0 sm:mb-2" href="">About</a>
+                <a class="mb-0 sm:mb-2" href="">Products</a>
+                <a class="mb-0 sm:mb-2" href="">Services</a>
+              </div>
+              <div class="footer__content__about__link__row text-[12px] xl:text-[1rem] ml-[2.5rem]">
+                <a class="mb-0 sm:mb-2" href="">Company</a>
+                <a class="mb-0 sm:mb-2" href="">Blog</a>
+                <a class="mb-0 sm:mb-2" href="">Careers</a>
+                <a class="mb-0 sm:mb-2" href="">News</a>
+              </div>
+              <div class="footer__content__about__link__row text-[12px] xl:text-[1rem] ml-[2.5rem]">
+                <a class="mb-0 sm:mb-2" href="">Resources</a>
+                <a class="mb-0 sm:mb-2" href="">Documentation</a>
+                <a class="mb-0 sm:mb-2" href="">Papers</a>
+                <a class="mb-0 sm:mb-2" href="">Press Conferences</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="footer__content">
+          <div class="footer__content__privacy">
+            <div class="footer__content__privacy__year text-[12px] xl:text-[14px]">
+              <span>@2024 Entek INC</span>
+            </div>
+            <div class="footer__content__privacy__links text-[10px] xl:text-[12px]">
+              <a href="">Terms of Service</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Cookies</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <style>
+        .card {
+          position: relative;
+          overflow: hidden;
+        }
+      </styl> -->
+    </div>
+
+    <!-- <script>
+      function toggleMenu() {
+        var menuList = document.getElementById("menu-list");
+        menuList.style.display =
+          menuList.style.display === "flex" ? "" : "flex";
+      }
+    </script> -->
+    <script>
+      function toggleMenu() {
+       document.querySelector(".nav-menu").style.top="0";
+        
+      }
+      function closeMenu(){
+        document.querySelector(".nav-menu").style.top="-100vh";
+      }
+    </script>
+     <script>
+      function openVideo() {
+       document.querySelector(".video-popup").style.top="0";
+        
+      }
+      function closeVideo(){
+        document.querySelector(".video-popup").style.top="-100vh";
+      }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        
+        var video = document.getElementById('myVideo');
+        var closeButtonIcon = document.querySelector('#closeButton i');
+
+    
+    closeButtonIcon.addEventListener('click', function() {
+      
+      video.pause();
+     
+      video.currentTime = 0;
+    });
+  });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          dots: false,
+          infinite: true,
+          autoplay: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          prevArrow:
+            '<button type="button" class="slick-prev">Previous</button>',
+          nextArrow: '<button type="button" class="slick-next">Next</button>',
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                autoplay: true,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                autoplay: true,
+                infinite: true,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                autoplay: true,
+                infinite: true,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".slider_clients").slick({
+          dots: true,
+          infinite: true,
+          autoplay: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          prevArrow:
+            '<button type="button" class="slick-prev">Previous</button>',
+          nextArrow: '<button type="button" class="slick-next">Next</button>',
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                autoplay: true,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                autoplay: true,
+                infinite: true,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                autoplay: true,
+                infinite: true,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    
+    <script>
+      $(document).ready(function () {
+        $(".slider_cards").slick({
+          dots: true,
+          infinite: true,
+          autoplay: true,
+          speed: 300,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          prevArrow:
+            '<button type="button" class="slick-prev">Previous</button>',
+          nextArrow: '<button type="button" class="slick-next">Next</button>',
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow:1 ,
+                slidesToScroll: 1,
+                autoplay: true,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                autoplay: true,
+                infinite: true,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                autoplay: true,
+                infinite: true,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+
+
+    <script>
+      $(document).ready(function () {
+        $(".autoplay").slick({
+          dots: true,
+          infinite: true,
+          autoplay: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          prevArrow:
+            '<button type="button" class="slick-prev">Previous</button>',
+          nextArrow: '<button type="button" class="slick-next">Next</button>',
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                autoplay: true,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                autoplay: true,
+                infinite: true,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                autoplay: true,
+                infinite: true,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const elementsToAnimate =
+          document.querySelectorAll(".animate-on-scroll");
+
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("slide-in-from-right");
+              } else {
+                entry.target.classList.remove("slide-in-from-right");
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        elementsToAnimate.forEach((element) => {
+          observer.observe(element);
+        });
+      });
+    </script>
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("trigger");
+          }
+          // else
+          //  entry.target.classList.remove("trigger");
+        });
+      });
+      const slideLeft = document.querySelectorAll(
+        ".slide-right,.slide-left,.fade-in,.button-slide-left,.line,.slide-up,.slide-down"
+      );
+
+      slideLeft.forEach((el) => observer.observe(el));
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const blogSection = document.querySelector(".page_blog_cards");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+              } else {
+                entry.target.classList.remove("in-view");
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        observer.observe(blogSection);
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".product-slider").slick({
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          prevArrow:
+            '<button type="button" class="slick-prev">&#8249;</button>',
+          nextArrow:
+            '<button type="button" class="slick-next">&#8250;</button>',
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                autoplay: true,
+                infinite: true,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                autoplay: true,
+                infinite: true,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    
+    
+  </body>
+</html>

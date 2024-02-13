@@ -91,7 +91,7 @@
     <div class="nav-items w-[50%] h-[80%] text-white font-montserrat text-4xl text-center">
 <ul class="h-full flex flex-col justify-evenly items-center">
   <a class="w-fit" href=""><li>HOME</li></a>
-  <a class="w-fit" href=""><li>ABOUT</li></a>
+  <a class="w-fit" href="about_us.html"><li>ABOUT</li></a>
     <a class="w-fit" href=""><li>PRODUCTS</li></a>
       <a class="w-fit" href=""><li>SOLUTIONS</li></a>
         <a class="w-fit" href=""><li>SUPPORT</li></a>
@@ -175,14 +175,14 @@
                 <a href="#"> <div class="text-wrapper">CAREER</div></a>
               </div>
             </div>
-            <div class="page__overlap__header__content">
+            <div class="page__overlap__header__content flex flex-col">
               <div class="contact-us">
                 <div class="header-nav">
                   <img class="symbol" src="img/symbol.png" />
                 </div>
                 <div class="contact-content">
                   <div class="header-nav-call">Call Anytime</div>
-                  <p class="header-nav-heading">+92 ( 8800 ) - 6780</p>
+                  <p class="header-nav-heading ">+92 ( 8800 ) - 6780</p>
                 </div>
               </div>
             </div>
@@ -1237,7 +1237,7 @@
         </div>
         <div class="footer__content">
           <div
-            class="footer__content__newsletter flex justify-center sm:justify-between"
+            class="footer__content__newsletter flex justify-center  sm:justify-between"
           >
             <div class="footer__content__newsletter__title slide-right">
               <p class="text-[13px] sm:text-[29px]" >
@@ -1246,12 +1246,12 @@
               </p>
             </div>
             <div
-              class="mt-2 mb-2 sm:mt-0 sm:mb-0 slide-left footer__content__newsletter__form  flex flex-col sm:flex-row items-center justify-center sm:justify-end w-[40%] sm:w-[100%]   "
+              class="mt-2 mb-2 sm:mt-0 sm:mb-0 slide-left footer__content__newsletter__form  flex flex-col  lg:flex-row items-center justify-center sm:justify-end w-[40%] sm:w-[100%]   "
             >
             
               <!-- <img src="img/user.svg" class="" />
               <input type="text" placeholder="Enter your email" /> -->
-              <div class="relative mb-2 sm:mb-0">
+              <div class="relative mb-2 lg:mb-0">
                 <input type="text" placeholder="Enter your email" class="" />
                 <img src="img/user.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2" />
               </div>
@@ -1473,7 +1473,7 @@
         $(".slider_cards").slick({
           dots: true,
           infinite: true,
-          autoplay: false,
+          autoplay: true,
           speed: 300,
           slidesToShow: 2,
           slidesToScroll: 2,
