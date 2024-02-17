@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="scroll-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>Entek</title>
+    <style>
+      .slider-container {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      .slick-prev,
+      .slick-next {
+        font-size: 24px;
+        color: #2a4c95;
+      }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/Entek_Git/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
+    />
+    <!-- Include Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <!-- Include Slick Theme CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div
+      class="nav-menu flex justify-center items-center fixed -top-[100vh] left-0 h-screen w-full z-[999999] bg-[#2a4c95] transition ease-in-out"
+    >
+      <div
+        class="nav-items w-[50%] h-[80%] text-white font-montserrat text-4xl text-center"
+      >
+        <ul class="h-full flex flex-col justify-evenly items-center">
+          <a class="w-fit" href="index.html"><li>HOME</li></a>
+          <a class="w-fit" href="about_us.html"><li>ABOUT</li></a>
+          <a class="w-fit" href="our_products.html"><li>PRODUCTS</li></a>
+          <a class="w-fit" href="solutions.html"><li>SOLUTIONS</li></a>
+          <a class="w-fit" href="support.html"><li>SUPPORT</li></a>
+          <a class="w-fit" href="career.html"><li>CAREER</li></a>
+        </ul>
+      </div>
+      <i
+        class="fas fa-times text-white text-2xl absolute top-5 right-5"
+        id="closeButton"
+        onclick="closeMenu()"
+      ></i>
+    </div>
+
+    <div class="page">
+      <section class="aboutus_main -mb-[8rem]">
+        <div class="w-full h-full bg-[#FFF] relative">
+          <div class="bg-[#2a4c95] w-full overflow-hidden">
+            <img
+              src="img/image_products1.png"
+              alt=""
+              class="opacity-25 w-full h-full"
+            />
+          </div>
+
+          <div
+            class="page__overlap__header absolute sm:top-0 top-[-26px] sm:left-0 left-[30px]"
+          >
+            <div class="page__overlap__header__logo">
+              <img
+                class="page__overlap__header__logo__img w-[50%] sm:w-[100%]"
+                src="img/logo.svg"
+              />
+            </div>
+            <label class="menu-button-lbel" for="menu-toggle">
+              <div
+                class="menu-button"
+                id="menu-button-toggle"
+                onclick="toggleMenu()"
+              ></div>
+            </label>
+            <div class="page__overlap__header__menu w-full">
+              <div class="menu-list w-full justify-evenly px-20" id="menu-list">
+                <a href="index.html"><div class="text-wrapper">HOME</div></a>
+
+                <a href="about_us.html">
+                  <div class="text-wrapper">ABOUT</div></a
+                >
+                <a href="our_products.html"> <div class="text-wrapper">PRODUCTS</div></a>
+                <a href="solutions.html"> <div class="text-wrapper">SOLUTIONS</div></a>
+                <a href="support.html"> <div class="text-wrapper">SUPPORT</div></a>
+                <a href="career.html"> <div class="text-wrapper">CAREER</div></a>
+              </div>
+            </div>
+            <div class="page__overlap__header__content flex flex-col">
+              <div class="contact-us">
+                <div class="header-nav">
+                  <img class="symbol" src="img/symbol.png" />
+                </div>
+                <div class="contact-content">
+                  <div class="header-nav-call">Call Anytime</div>
+                  <p class="header-nav-heading">+92 ( 8800 ) - 6780</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="page__requirements__content flex w-full h-full justify-center items-end xl:mt-[200px]"
+          >
+            <div
+              class="page__req__main__content text-center absolute bottom-[4.5rem] md:bottom-[7.5rem] lg:bottom-[8.5rem] xl:bottom-[21.5rem]"
+            >
+              <h5
+                class="text-xl sm:text-2xl md:3xl lg:text-4xl xl:text-5xl 2xl:text-[5xl] text-white font-extrabold italic slide-up"
+              >
+                OUR SOLUTIONS
+              </h5>
+
+              <button
+                class="bg-white text-black absolute -bottom-[8rem] sm:-bottom-[11rem] -left-[3rem] sm:left-[2rem] px-10 py-5 rounded-full font-extrabold"
+              >
+                HOME/SOLUTIONS
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="page__solutions_one bg-[#FFF] lg:mt-[4rem] md:mt-[8rem] mt-[10rem] flex justify-center items-center"
+      >
+        <div
+          class="flex justify-between w-[90%] md:w-full bg-[#FFF] lg:flex-row flex-col mx-auto"
+        >
+          <!-- Left Section -->
+          <div
+            class="flex flex-col justify-center md:mx-auto md:w-[80%] lg:w-[40%] left-section mt-5 md:mt-8 lg:mt-0 p-5 sm:p-0"
+          >
+            <h5
+              class="text-3xl 2xl:text-5xl font-bold mb-8 text-[#2a4c95] font-montserrat line-height-[1.2] slide-left"
+            >
+              1.Defence
+            </h5>
+            <p
+              class="text-sm 2xl:text-xl font-montserrat text-[#2a4c95] leading-6 mb-8 slide-right"
+            >
+              Non augue egestas, commodo velit eget, vestibulum tellus.
+              Curabitur vulputate justo elit, at elementum orci pulvinar vel.
+              Pellentesque habitant morbi tristique. Pellentesque habitant morbi
+              tristique. Ut non augue egestas,commodo velit eget, vestibulum
+              tellus.
+            </p>
+            <div class="flex flex-row">
+                <div class="flex">
+                    <div
+                    class="border border-l-3 border-l-[#D73D35] bg-gray-200 mb-2 inline-block w-[80px] h-[108px]  rounded-lg overflow-hidden  flex items-center justify-center"
+                    style="border-radius: 5.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/defence_svg.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-start">
+                    <h5
+                    class="ml-5 text-xl 2xl:text-2xl  font-bold mb-5 text-[#D73D35] font-montserrat line-height-[1.2] slide-left"
+                  >
+                Aerospace
+                  </h5>
+                  <p class=" ml-5 text-sm 2xl:text-xl text-[#2a4c95]">Cloud Medical was formed by the collaboration</p>
+                  </div>
+                     
+                  </div>
+    
+                  <div class="flex">
+                    <div
+                    class="border border-l-3 border-l-[#D73D35] bg-gray-200 mb-2 inline-block w-[80px] h-[108px]  rounded-lg overflow-hidden  flex items-center justify-center"
+                    style="border-radius: 5.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/defence_svg.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-start">
+                    <h5
+                    class="ml-5 text-xl 2xl:text-2xl  font-bold mb-5 text-[#D73D35] font-montserrat line-height-[1.2] slide-left"
+                  >
+                Aerospace
+                  </h5>
+                  <p class=" ml-5 text-sm 2xl:text-xl text-[#2a4c95]">Cloud Medical was formed by the collaboration</p>
+                  </div>
+                     
+                  </div>
+            </div>
+            
+          </div>
+
+          <!-- Right Section -->
+
+          <div
+            class="flex justify-center right-section slide-left md:mt-5 lg:mt-0 w-full lg:w-[50%] "
+          >
+            <div class="relative">
+              <img
+                src="img/solutions_1.png"
+                class="w-[85%] mx-auto sm:mx-0 md:w-full lg:w-[90%] h-auto relative inset-0 z-10"
+                alt="Your Image"
+              />
+            </div>
+          </div>
+          <!-- Right-->
+        </div>
+      </section>
+
+      <section
+        name="page_solutions_two"
+        class="sm:mt-[4rem] mt-[2rem] bg-[#FFF] flex justify-center items-center"
+      >
+        <div
+          class="flex justify-between w-[90%] md:w-full lg:flex-row flex-col-reverse mx-auto"
+        >
+          <!-- Left Section -->
+
+          <div
+            class="flex justify-center right-section slide-left md:mt-5 lg:mt-0 w-full lg:w-[50%]"
+          >
+            <div class="relative">
+              <img
+                src="img/solutions_2.png"
+                class="w-[85%] mx-auto sm:mx-0 md:w-full lg:w-[90%] h-auto relative inset-0 z-10"
+                alt="Your Image"
+              />
+            </div>
+          </div>
+          <!-- Left-->
+          <!-- Right Section -->
+          <div
+            class="flex flex-col justify-center md:mx-auto md:w-[80%] lg:w-[40%] left-section mt-5 md:mt-8 lg:mt-0 p-5 sm:p-0"
+          >
+            <h5
+              class="text-3xl 2xl:text-5xl font-bold mb-8 text-[#2a4c95] font-montserrat line-height-[1.2] slide-left"
+            >
+              2.Aerospace
+            </h5>
+            <p
+              class="text-sm 2xl:text-xl font-montserrat text-[#2a4c95] leading-6 mb-8 slide-right"
+            >
+              Non augue egestas, commodo velit eget, vestibulum tellus.
+              Curabitur vulputate justo elit, at elementum orci pulvinar vel.
+              Pellentesque habitant morbi tristique. Pellentesque habitant morbi
+              tristique. Ut non augue egestas,commodo velit eget, vestibulum
+              tellus.
+            </p>
+            <div class="flex flex-row">
+                <div class="flex">
+                    <div
+                    class="border border-l-3 border-l-[#D73D35] bg-gray-200 mb-2 inline-block w-[80px] h-[108px]  rounded-lg overflow-hidden  flex items-center justify-center"
+                    style="border-radius: 5.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/defence_svg.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-start">
+                    <h5
+                    class="ml-5 text-xl 2xl:text-2xl  font-bold mb-5 text-[#D73D35] font-montserrat line-height-[1.2] slide-left"
+                  >
+                Aerospace
+                  </h5>
+                  <p class=" ml-5 text-sm 2xl:text-xl text-[#2a4c95]">Cloud Medical was formed by the collaboration</p>
+                  </div>
+                     
+                  </div>
+    
+                  <div class="flex">
+                    <div
+                    class="border border-l-3 border-l-[#D73D35] bg-gray-200 mb-2 inline-block w-[80px] h-[108px]  rounded-lg overflow-hidden  flex items-center justify-center"
+                    style="border-radius: 5.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/defence_svg.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-start">
+                    <h5
+                    class="ml-5 text-xl 2xl:text-2xl  font-bold mb-5 text-[#D73D35] font-montserrat line-height-[1.2] slide-left"
+                  >
+                Aerospace
+                  </h5>
+                  <p class=" ml-5 text-sm 2xl:text-xl text-[#2a4c95]">Cloud Medical was formed by the collaboration</p>
+                  </div>
+                     
+                  </div>
+            </div>
+            
+          </div>
+          <!-- End RIght Section -->
+        </div>
+      </section>
+      <section
+        class="page__aboutus_three bg-[#FFF] sm:mt-[4rem] mt-[2rem] flex justify-center items-center"
+      >
+        <div
+          class="flex justify-between w-[90%] md:w-full bg-[#FFF] lg:flex-row flex-col mx-auto"
+        >
+          <!-- Left Section -->
+          <div
+            class="flex flex-col justify-center md:mx-auto md:w-[80%] lg:w-[40%] left-section mt-5 md:mt-8 lg:mt-0  p-5 sm:p-0"
+          >
+            <h5
+              class="text-3xl 2xl:text-5xl font-bold mb-8 text-black font-montserrat line-height-[1.2] slide-left"
+            >
+              3.Defence and Aerospace
+            </h5>
+            <p
+              class="text-sm 2xl:text-xl font-montserrat text-[#2a4c95] leading-6 mb-8 slide-right"
+            >
+              Non augue egestas, commodo velit eget, vestibulum tellus.
+              Curabitur vulputate justo elit, at elementum orci pulvinar vel.
+              Pellentesque habitant morbi tristique. Pellentesque habitant morbi
+              tristique. Ut non augue egestas,commodo velit eget, vestibulum
+              tellus.
+            </p>
+
+            <div class="flex flex-row">
+                <div class="flex">
+                    <div
+                    class="border border-l-3 border-l-[#D73D35] bg-gray-200 mb-2 inline-block w-[80px] h-[108px]  rounded-lg overflow-hidden  flex items-center justify-center"
+                    style="border-radius: 5.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/defence_svg.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-start">
+                    <h5
+                    class="ml-5 text-xl 2xl:text-2xl  font-bold mb-5 text-[#D73D35] font-montserrat line-height-[1.2] slide-left"
+                  >
+                Aerospace
+                  </h5>
+                  <p class=" ml-5 text-sm 2xl:text-xl text-[#2a4c95]">Cloud Medical was formed by the collaboration</p>
+                  </div>
+                     
+                  </div>
+    
+                  <div class="flex">
+                    <div
+                    class="border border-l-3 border-l-[#D73D35] bg-gray-200 mb-2 inline-block w-[80px] h-[108px]  rounded-lg overflow-hidden  flex items-center justify-center"
+                    style="border-radius: 5.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/defence_svg.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-start">
+                    <h5
+                    class="ml-5 text-xl 2xl:text-2xl  font-bold mb-5 text-[#D73D35] font-montserrat line-height-[1.2] slide-left"
+                  >
+                Aerospace
+                  </h5>
+                  <p class=" ml-5 text-sm 2xl:text-xl text-[#2a4c95]">Cloud Medical was formed by the collaboration</p>
+                  </div>
+                     
+                  </div>
+            </div>
+            
+
+            
+            
+          </div>
+
+          <!-- Right Section -->
+
+          <div
+            class="flex justify-center right-section slide-left md:mt-5 lg:mt-0 w-full lg:w-[50%]"
+          >
+            <div class="relative">
+              <img
+                src="img/solutions_3.png"
+                class="w-[85%] mx-auto sm:mx-0 md:w-full lg:w-[90%] h-auto relative inset-0 z-10"
+                alt="Your Image"
+              />
+            </div>
+          </div>
+          <!-- Right-->
+        </div>
+      </section>
+
+      <section
+        name="page_solutions_four"
+        class="sm:mt-[4rem] mt-[2rem] bg-[#FFF] flex justify-center items-center"
+      >
+        <div
+          class="flex justify-between w-[90%] md:w-full lg:flex-row flex-col-reverse mx-auto"
+        >
+          <!-- Left Section -->
+
+          <div
+            class="flex justify-center right-section slide-left md:mt-5 lg:mt-0 w-full lg:w-[50%]"
+          >
+            <div class="relative">
+              <img
+                src="img/solutions_4.png"
+                class="w-[85%] mx-auto sm:mx-0 md:w-full lg:w-[90%] h-auto relative inset-0 z-10"
+                alt="Your Image"
+              />
+            </div>
+          </div>
+          <!-- Left-->
+          <!-- Right Section -->
+          <div
+            class="flex flex-col justify-center md:mx-auto md:w-[80%] lg:w-[40%] left-section mt-5 md:mt-8 lg:mt-0 p-5 sm:p-0"
+          >
+            <h5
+              class="text-3xl 2xl:text-5xl font-bold mb-8 text-[#2a4c95] font-montserrat line-height-[1.2] slide-left"
+            >
+              4.Airborne equipment
+            </h5>
+            <p
+              class="text-sm 2xl:text-xl font-montserrat text-[#2a4c95] leading-6 mb-8 slide-right"
+            >
+              Non augue egestas, commodo velit eget, vestibulum tellus.
+              Curabitur vulputate justo elit, at elementum orci pulvinar vel.
+              Pellentesque habitant morbi tristique. Pellentesque habitant morbi
+              tristique. Ut non augue egestas,commodo velit eget, vestibulum
+              tellus.
+            </p>
+            <div class="flex flex-row">
+                <div class="flex">
+                    <div
+                    class="border border-l-3 border-l-[#D73D35] bg-gray-200 mb-2 inline-block w-[80px] h-[108px]  rounded-lg overflow-hidden  flex items-center justify-center"
+                    style="border-radius: 5.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/defence_svg.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-start">
+                    <h5
+                    class="ml-5 text-xl 2xl:text-2xl  font-bold mb-5 text-[#D73D35] font-montserrat line-height-[1.2] slide-left"
+                  >
+                Aerospace
+                  </h5>
+                  <p class=" ml-5 text-sm 2xl:text-xl text-[#2a4c95]">Cloud Medical was formed by the collaboration</p>
+                  </div>
+                     
+                  </div>
+    
+                  <div class="flex">
+                    <div
+                    class="border border-l-3 border-l-[#D73D35] bg-gray-200 mb-2 inline-block w-[80px] h-[108px]  rounded-lg overflow-hidden  flex items-center justify-center"
+                    style="border-radius: 5.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/defence_svg.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-start">
+                    <h5
+                    class="ml-5 text-xl 2xl:text-2xl  font-bold mb-5 text-[#D73D35] font-montserrat line-height-[1.2] slide-left"
+                  >
+                Aerospace
+                  </h5>
+                  <p class=" ml-5 text-sm 2xl:text-xl text-[#2a4c95]">Cloud Medical was formed by the collaboration</p>
+                  </div>
+                     
+                  </div>
+            </div>
+            
+          </div>
+          <!-- End RIght Section -->
+        </div>
+      </section>
+
+      <section
+      class="page__solutions_five bg-[#FFF] sm:mt-[4rem] mt-[2rem] flex justify-center items-center"
+    >
+      <div
+        class="flex justify-between w-[90%] md:w-full bg-[#FFF] lg:flex-row flex-col mx-auto"
+      >
+        <!-- Left Section -->
+        <div
+          class="flex flex-col justify-center md:mx-auto md:w-[80%] lg:w-[40%] left-section mt-5 md:mt-8 lg:mt-0  p-5 sm:p-0"
+        >
+          <h5
+            class="text-3xl 2xl:text-5xl font-bold mb-8 text-black font-montserrat line-height-[1.2] slide-left"
+          >
+            3.Defence and Aerospace
+          </h5>
+          <p
+            class="text-sm 2xl:text-xl font-montserrat text-[#2a4c95] leading-6 mb-8 slide-right"
+          >
+            Non augue egestas, commodo velit eget, vestibulum tellus.
+            Curabitur vulputate justo elit, at elementum orci pulvinar vel.
+            Pellentesque habitant morbi tristique. Pellentesque habitant morbi
+            tristique. Ut non augue egestas,commodo velit eget, vestibulum
+            tellus.
+          </p>
+
+          <div class="flex flex-row">
+              <div class="flex">
+                  <div
+                  class="border border-l-3 border-l-[#D73D35] bg-gray-200 mb-2 inline-block w-[80px] h-[108px]  rounded-lg overflow-hidden  flex items-center justify-center"
+                  style="border-radius: 5.107px"
+                >
+                  <img
+                    class=""
+                    src="img/defence_svg.svg"
+                    style="width: 30.322px; height: 30.322px"
+                    alt="Your Image"
+                  />
+                </div>
+                <div class="flex flex-col justify-start">
+                  <h5
+                  class="ml-5 text-xl 2xl:text-2xl  font-bold mb-5 text-[#D73D35] font-montserrat line-height-[1.2] slide-left"
+                >
+              Aerospace
+                </h5>
+                <p class=" ml-5 text-sm 2xl:text-xl text-[#2a4c95]">Cloud Medical was formed by the collaboration</p>
+                </div>
+                   
+                </div>
+  
+                <div class="flex">
+                  <div
+                  class="border border-l-3 border-l-[#D73D35] bg-gray-200 mb-2 inline-block w-[80px] h-[108px]  rounded-lg overflow-hidden  flex items-center justify-center"
+                  style="border-radius: 5.107px"
+                >
+                  <img
+                    class=""
+                    src="img/defence_svg.svg"
+                    style="width: 30.322px; height: 30.322px"
+                    alt="Your Image"
+                  />
+                </div>
+                <div class="flex flex-col justify-start">
+                  <h5
+                  class="ml-5 text-xl 2xl:text-2xl  font-bold mb-5 text-[#D73D35] font-montserrat line-height-[1.2] slide-left"
+                >
+              Aerospace
+                </h5>
+                <p class=" ml-5 text-sm 2xl:text-xl text-[#2a4c95]">Cloud Medical was formed by the collaboration</p>
+                </div>
+                   
+                </div>
+          </div>
+          
+
+          
+          
+        </div>
+
+        <!-- Right Section -->
+
+        <div
+          class="flex justify-center right-section slide-left md:mt-5 lg:mt-0 w-full lg:w-[50%]"
+        >
+          <div class="relative">
+            <img
+              src="img/solutions_3.png"
+              class="w-[85%] mx-auto sm:mx-0 md:w-full lg:w-[90%] h-auto relative inset-0 z-10"
+              alt="Your Image"
+            />
+          </div>
+        </div>
+        <!-- Right-->
+      </div>
+    </section>
+
+    <section class="page__ourclients">
+        <div class="parent__div__client bg-white w-full h-full mt-20 mb-[-3.5rem]">
+          <div class="page__client__content mt-5 slide-up">
+            <h2 class="text-[#2a4c95] text-center text-3xl font-extrabold">
+              Our Clients
+            </h2>
+            <div
+              class="slider_clients page__client__list flex w-[50%] sm:w-[80%] sm:flex-row justify-evenly mx-auto items-center mt-7"
+            >
+              <img class="mt-[3.25rem] sm:mr-[7rem]" src="img/google-2015 1.svg" />
+              <img class="mt-[3.25rem] sm:mr-[7rem]" src="img/netflix-3 1.svg" alt="" />
+              <img class="mt-[3.25rem] sm:mr-[7rem]" src="img/airbnb 1.svg" alt="" />
+              <img class="mt-[3.25rem] sm:mr-[7rem]" src="img/amazon-2 (1) 1.svg" alt="" />
+              <img class="mt-[3.25rem] sm:mr-[7rem]" src="img/facebook.svg" alt="" />
+              <img class="mt-[3.25rem] sm:mr-[7rem]" src="img/grab-logo.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__products -mb-[4rem] sm:mb-[7rem]">
+        <div
+          class="relative bg-white bg-opacity-10 py-16 h-full w-full overflow-hidden"
+        >
+          <!-- Background Shapes -->
+          <div
+            class="absolute top-0 left-0 w-[80%] 2xl:w-[63%]  h-[80%] sm:h-full bg-red-100 rounded-tl-[2px] rounded-tr-[404.294px]"
+          ></div>
+          <div
+            class="absolute bottom-0 right-[266px] 2xl:right-[551px] top-[95px] rounded-b-full"
+          >
+            <img class="" src="img/Ellipse-13.png" />
+          </div>
+
+          <!-- Container -->
+          <div class="container mx-auto relative z-10 slide-up p-4 sm:p-0 ">
+            <!-- Heading Titles -->
+            <h3 class="text-sm 2xl:text-xl font-semibold text-[#2a4c95] mb-5 mt-[60px] ">
+              OUR PRODUCTS
+            </h3>
+            <h1 class="text-3xl 2xl:text-4xl font-bold text-[#2a4c95] mb-8">
+              Our Latest Products &amp; Innovations
+            </h1>
+            <div class="slider-container">
+              <!-- Product Cards -->
+              <div class="product-slider gap-[5px] sm:gap-[325px] mx-10 my-10 sm:mx-20 sm:my-40 w-full h-full">
+                <!-- Card 1 -->
+                <div
+                  class="bg-white p-10 sm:p-6 rounded-md shadow-md relative card active sm:mr-8 ml-10 sm:ml-0 "
+                  style="width: 311px; height: 194px; border-radius: 10.107px"
+                >
+                  
+                  <div
+                    class="mb-2 inline-block w-[52px] h-[48px] rounded-lg overflow-hidden bg-rose-200 flex items-center justify-center"
+                    style="border-radius: 10.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/website-4943 1.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+
+                  <p class="mb-2 font-bold text-sm ">AEROSPACE</p>
+                  <p class="font-thin text-sm">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+
+               
+
+                <!-- Card 2 -->
+                <div
+                  class="bg-white p-6 rounded-md shadow-md relative card mr-8 ml-10 sm:ml-0"
+                  style="width: 311px; height: 194px; border-radius: 10.107px"
+                >
+                 
+                  <div
+                    class="mb-2 inline-block w-[52px] h-[48px] rounded-lg overflow-hidden bg-rose-200 flex items-center justify-center"
+                    style="border-radius: 10.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/website-4943 1.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+
+                  <p class="mb-2 font-bold text-sm ">AEROSPACE</p>
+                  <p class="font-thin text-sm ">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="bg-white p-6 rounded-md shadow-md mr-8 ml-10 sm:ml-0"
+                  style="width: 311px; height: 194px; border-radius: 10.107px"
+                >
+                  
+                  <div
+                    class="mb-2 inline-block w-[52px] h-[48px] rounded-lg overflow-hidden bg-rose-200 flex items-center justify-center"
+                    style="border-radius: 10.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/website-4943 1.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+
+                  <p class="mb-2 font-bold text-sm ">AEROSPACE</p>
+                  <p class="font-thin text-sm ">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="bg-white p-6 rounded-md shadow-md mr-8 ml-10 sm:ml-0"
+                  style="width: 311px; height: 194px; border-radius: 10.107px"
+                >
+                  
+                  <div
+                    class="mb-2 inline-block w-[52px] h-[48px] rounded-lg overflow-hidden bg-rose-200 flex items-center justify-center"
+                    style="border-radius: 10.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/website-4943 1.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+
+                  <p class="mb-2 font-bold text-sm ">AEROSPACE</p>
+                  <p class="font-thin text-sm ">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="bg-white p-6 rounded-md shadow-md mr-8 ml-10 sm:ml-0"
+                  style="width: 311px; height: 194px; border-radius: 10.107px"
+                >
+                
+                  <div
+                    class="mb-2 inline-block w-[52px] h-[48px] rounded-lg overflow-hidden bg-rose-200 flex items-center justify-center"
+                    style="border-radius: 10.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/website-4943 1.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+
+                  <p class="mb-2 font-bold text-sm ">AEROSPACE</p>
+                  <p class="text-sm font-thin ">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="bg-white p-6 rounded-md shadow-md mr-8 ml-10 sm:ml-0"
+                  style="width: 311px; height: 194px; border-radius: 10.107px"
+                >
+                  
+                  <div
+                    class="mb-2 inline-block w-[52px] h-[48px] rounded-lg overflow-hidden bg-rose-200 flex items-center justify-center"
+                    style="border-radius: 10.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/website-4943 1.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+
+                  <p class="mb-2 font-bold text-sm ">AEROSPACE</p>
+                  <p class="font-thin text-sm ">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                  class="bg-white p-6 rounded-md shadow-md mr-8 ml-10 sm:ml-0"
+                  style="width: 311px; height: 194px; border-radius: 10.107px"
+                >
+                  
+                  <div
+                    class="mb-2 inline-block w-[52px] h-[48px] rounded-lg overflow-hidden bg-rose-200 flex items-center justify-center"
+                    style="border-radius: 10.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/website-4943 1.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+
+                  <p class="mb-2 font-bold text-sm ">AEROSPACE</p>
+                  <p class="font-thin text-sm ">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                  class="bg-white p-6 rounded-md shadow-md mr-8 ml-10 sm:ml-0"
+                  style="width: 311px; height: 194px; border-radius: 10.107px"
+                >
+                  
+                  <div
+                    class="mb-2 inline-block w-[52px] h-[48px] rounded-lg overflow-hidden bg-rose-200 flex items-center justify-center"
+                    style="border-radius: 10.107px"
+                  >
+                    <img
+                      class=""
+                      src="img/website-4943 1.svg"
+                      style="width: 30.322px; height: 30.322px"
+                      alt="Your Image"
+                    />
+                  </div>
+
+                  <p class="mb-2 font-bold text-sm ">AEROSPACE</p>
+                  <p class="font-thin text-sm ">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+
+
+
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="page__blog w-full h-auto mt-[6rem]">
+        <div class="container mx-auto -mt-[2.5rem] p-4">
+          <!-- Headings -->
+          <h4
+            class="text-sm 2xl:text-xl text-[#2a4c95] mb-2 flex justify-center italic font-bold slide-up"
+          >
+            BLOG &amp; NEWS
+          </h4>
+          <h2
+            class="text-3xl 2xl:text-4xl text-[#2a4c95] font-semibold mb-[5rem] flex justify-center font-bold slide-up"
+          >
+            Our Latest Blog &amp; News
+          </h2>
+
+          <!-- Centered Image Cards -->
+          <div class="flex justify-center">
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-4 page_blog_cards animate-on-scroll"
+            >
+              <!-- Card 1 -->
+              <div class="bg-white p-4 shadow-md relative slide-right">
+                <div class="absolute top-[-14px] left-12 bg-red-500 px-6 py-4">
+                  <p class="text-white text-xl 2xl:text-2xl font-semibold">
+                    25
+                  </p>
+                  <p class="text-white text-sm 2xl:text-xl font-thin">AUG</p>
+                </div>
+                <img
+                  class="w-full h-[13rem] object-cover mb-4"
+                  src="img/rectangle-2.png"
+                  alt="Image 1"
+                />
+                <a href=""
+                  ><button
+                    class="py-1 px-5 mr-3 bg-red-500 rounded-full text-white"
+                  >
+                    aircraft
+                  </button></a
+                >
+
+                <p
+                  class="text-sm 2xl:text-xl font-montserrat text-black mt-4 font-bold"
+                >
+                  Quick and Easy Flaky Pastry for Tasty <br />
+                  Breakfast
+                </p>
+                <a href=""
+                  ><h3
+                    class="text-red-500 text-sm 2xl:text-xl font-semibold mt-4"
+                  >
+                    READ MORE
+                  </h3></a
+                >
+              </div>
+
+              <!-- Card 2 -->
+              <div class="bg-white p-4 shadow-md relative slide-left">
+                <div class="absolute top-[-14px] left-12 bg-white px-6 py-4">
+                  <p class="text-black text-xl 2xl:text-2xl font-semibold">
+                    25
+                  </p>
+                  <p class="text-black text-sm 2xl:text-xl font-thin">AUG</p>
+                </div>
+                <img
+                  class="w-full h-[13rem] object-cover mb-4"
+                  src="img/blog-img-2.png"
+                  alt="Image 2"
+                />
+                <a href=""
+                  ><button
+                    class="py-1 px-5 mr-3 bg-white rounded-full text-red-500 border border-red-500"
+                  >
+                    aircraft
+                  </button></a
+                >
+
+                <p
+                  class="text-sm 2xl:text-xl font-montserrat text-black mt-4 font-bold"
+                >
+                  Quick and Easy Flaky Pastry for Tasty <br />
+                  Breakfast
+                </p>
+                <a href=""
+                  ><h3 class="text-red-500 text-sm 2xl:text-xl font-bold mt-4">
+                    READ MORE
+                  </h3></a
+                >
+              </div>
+
+              <!-- Card 3 -->
+              <div class="bg-white p-4 shadow-md relative slide-up">
+                <div class="absolute top-[-14px] left-12 bg-white px-6 py-4">
+                  <p class="text-black text-xl 2xl:text-2xl font-semibold">
+                    25
+                  </p>
+                  <p class="text-black text-sm 2xl:text-xl font-thin">AUG</p>
+                </div>
+                <img
+                  class="w-full h-[13rem] object-cover mb-4"
+                  src="img/rectangle-2.png"
+                  alt="Image 3"
+                />
+                <a href=""
+                  ><button
+                    class="py-1 px-5 mr-3 bg-white rounded-full text-red-500 border border-red-500"
+                  >
+                    aircraft
+                  </button></a
+                >
+
+                <p class="text-sm 2xl:text-xl text-black mt-4 font-bold">
+                  Quick and Easy Flaky Pastry for Tasty <br />
+                  Breakfast
+                </p>
+                <a href=""
+                  ><h3 class="text-red-500 text-sm 2xl:text-xl font-bold mt-4">
+                    READ MORE
+                  </h3></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="footer__content">
+          <div class="footer__content__text">
+            <p class="text-[19px] sm:text-[57px] text-center slide-down">
+              Producers of Metallic parts & <br />
+              global aerospace defence majors
+            </p>
+          </div>
+        </div>
+        <div class="footer__content">
+          <div
+            class="footer__content__newsletter flex justify-center sm:justify-between"
+          >
+            <div class="footer__content__newsletter__title slide-right">
+              <p class="text-[13px] sm:text-[29px]">
+                Join our newsletter to <br />
+                keep up to date with us
+              </p>
+            </div>
+            <div
+              class="mt-2 mb-2 sm:mt-0 sm:mb-0 slide-left footer__content__newsletter__form flex flex-col lg:flex-row items-center justify-center sm:justify-end w-[40%] sm:w-[100%]"
+            >
+              <!-- <img src="img/user.svg" class="" />
+              <input type="text" placeholder="Enter your email" /> -->
+              <div class="relative mb-2 lg:mb-0">
+                <input type="text" placeholder="Enter your email" class="" />
+                <img
+                  src="img/user.svg"
+                  class="absolute left-3 top-1/2 transform -translate-y-1/2"
+                />
+              </div>
+
+              <button class="sm:w-[153px] w-[133px] flex justify-center">
+                <p>Subscribe</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="footer__content">
+          <div
+            class="footer__content__about flex justify-center sm:justify-between"
+          >
+            <div class="footer__content__about__social">
+              <div class="footer__content__about__social__logo">
+                <img src="img/logo.svg" />
+                <span class="text-[12px] xl:text-[1rem]"
+                  >We growing up your aerospace <br />
+                  managed componies</span
+                >
+              </div>
+              <div
+                class="footer__content__about__social__icons flex justify-center ml-0 sm:ml-20"
+              >
+                <span class="w-[32px] h-[35px]">
+                  <img class="element w-[12px]" src="img/facebookk.svg" />
+                </span>
+                <span class="w-[32px] h-[35px]">
+                  <img class="element w-[12px]" src="img/linkdin.svg" />
+                </span>
+                <span class="w-[32px] h-[35px]">
+                  <img class="element w-[12px]" src="img/insta.svg" />
+                </span>
+              </div>
+            </div>
+            <div
+              class="footer__content__about__link flex items-center justify-center"
+            >
+              <div
+                class="footer__content__about__link__row text-[12px] xl:text-[1rem]"
+              >
+                <a class="mb-0 sm:mb-2" href="">Platform</a>
+                <a class="mb-0 sm:mb-2" href="">About</a>
+                <a class="mb-0 sm:mb-2" href="">Products</a>
+                <a class="mb-0 sm:mb-2" href="">Services</a>
+              </div>
+              <div
+                class="footer__content__about__link__row text-[12px] xl:text-[1rem] ml-[2.5rem]"
+              >
+                <a class="mb-0 sm:mb-2" href="">Company</a>
+                <a class="mb-0 sm:mb-2" href="">Blog</a>
+                <a class="mb-0 sm:mb-2" href="">Careers</a>
+                <a class="mb-0 sm:mb-2" href="">News</a>
+              </div>
+              <div
+                class="footer__content__about__link__row text-[12px] xl:text-[1rem] ml-[2.5rem]"
+              >
+                <a class="mb-0 sm:mb-2" href="">Resources</a>
+                <a class="mb-0 sm:mb-2" href="">Documentation</a>
+                <a class="mb-0 sm:mb-2" href="">Papers</a>
+                <a class="mb-0 sm:mb-2" href="">Press Conferences</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="footer__content">
+          <div class="footer__content__privacy">
+            <div
+              class="footer__content__privacy__year text-[12px] xl:text-[14px]"
+            >
+              <span>@2024 Entek INC</span>
+            </div>
+            <div
+              class="footer__content__privacy__links text-[10px] xl:text-[12px]"
+            >
+              <a href="">Terms of Service</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Cookies</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <style>
+        .card {
+          position: relative;
+          overflow: hidden;
+        }
+      </styl> -->
+    </div>
+
+    <!-- <script>
+      function toggleMenu() {
+        var menuList = document.getElementById("menu-list");
+        menuList.style.display =
+          menuList.style.display === "flex" ? "" : "flex";
+      }
+    </script> -->
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-menu").style.top = "0";
+      }
+      function closeMenu() {
+        document.querySelector(".nav-menu").style.top = "-100vh";
+      }
+    </script>
+    <script>
+      function openVideo() {
+        document.querySelector(".video-popup").style.top = "0";
+      }
+      function closeVideo() {
+        document.querySelector(".video-popup").style.top = "-100vh";
+      }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var video = document.getElementById("myVideo");
+        var closeButtonIcon = document.querySelector("#closeButton i");
+
+        closeButtonIcon.addEventListener("click", function () {
+          video.pause();
+
+          video.currentTime = 0;
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          dots: false,
+          infinite: true,
+          autoplay: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          prevArrow:
+            '<button type="button" class="slick-prev">Previous</button>',
+          nextArrow: '<button type="button" class="slick-next">Next</button>',
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                autoplay: true,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                autoplay: true,
+                infinite: true,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                autoplay: true,
+                infinite: true,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script>
+        $(document).ready(function () {
+          $(".slider_clients").slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow:
+              '<button type="button" class="slick-prev">Previous</button>',
+            nextArrow: '<button type="button" class="slick-next">Next</button>',
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  autoplay: true,
+                  infinite: true,
+                  dots: true,
+                },
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  autoplay: true,
+                  infinite: true,
+                  slidesToScroll: 2,
+                },
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  autoplay: true,
+                  infinite: true,
+                  slidesToScroll: 1,
+                },
+              },
+            ],
+          });
+        });
+      </script>
+
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("trigger");
+          }
+          // else
+          //  entry.target.classList.remove("trigger");
+        });
+      });
+      const slideLeft = document.querySelectorAll(
+        ".slide-right,.slide-left,.fade-in,.button-slide-left,.line,.slide-up,.slide-down"
+      );
+
+      slideLeft.forEach((el) => observer.observe(el));
+    </script>
+    <script>
+        $(document).ready(function () {
+          $(".slider_cards").slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            prevArrow:
+              '<button type="button" class="slick-prev">Previous</button>',
+            nextArrow: '<button type="button" class="slick-next">Next</button>',
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow:1 ,
+                  slidesToScroll: 1,
+                  autoplay: true,
+                  infinite: true,
+                  dots: true,
+                },
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 1,
+                  autoplay: true,
+                  infinite: true,
+                  slidesToScroll: 1,
+                },
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  autoplay: true,
+                  infinite: true,
+                  slidesToScroll: 1,
+                },
+              },
+            ],
+          });
+        });
+      </script>
+       <script>
+        $(document).ready(function () {
+          $(".product-slider").slick({
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow:
+              '<button type="button" class="slick-prev">&#8249;</button>',
+            nextArrow:
+              '<button type="button" class="slick-next">&#8250;</button>',
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  autoplay: true,
+                  infinite: true,
+                  dots: true,
+                },
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 1,
+                  autoplay: true,
+                  infinite: true,
+                  slidesToScroll: 1,
+                },
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  autoplay: true,
+                  infinite: true,
+                  slidesToScroll: 1,
+                },
+              },
+            ],
+          });
+        });
+      </script>
+  </body>
+</html>
